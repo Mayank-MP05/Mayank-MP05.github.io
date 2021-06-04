@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import MayankImg from "./linked-in-dp-gray-bg.png";
+import MayankImg from "./Mayank-Pachpande-bg-img-edited.jpg";
 import Sociallinks from "./Sociallinks";
 function Introcard() {
   return (
