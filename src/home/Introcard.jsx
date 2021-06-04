@@ -12,8 +12,10 @@ function Introcard() {
         <Card.Body>
           <Card.Title>Mayank Pachpande</Card.Title>
           <Card.Text>Software Development Engineer</Card.Text>
-          <Link to='/projects'>
-            <Button variant='primary'>Projects</Button>
+          <Link to='/projects' className='font-weight-bold'>
+            <button className='btn btn-outline-warning  m-1'>
+              Projects ⏩
+            </button>
           </Link>
         </Card.Body>
       </Card>

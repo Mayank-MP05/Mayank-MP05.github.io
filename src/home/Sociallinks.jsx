@@ -12,9 +12,16 @@ import medium from "./logos/medium.png";
 import devfolio from "./logos/devfolio.png";
 import twitter from "./logos/twitter.png";
 
+import resume from "./logos/resume.png";
+
 function Sociallinks() {
   return (
     <div className='shadow-sm p-3 mb-5 bg-white rounded social-links'>
+      <a
+        href='https://drive.google.com/file/d/1o4fcfhSdADrUXuGFrd313IxEnMh62NHk/view?usp=sharing'
+        target='_blank'>
+        <img src={resume} />
+      </a>
       <a href='https://www.linkedin.com/in/mayank-mp5/' target='_blank'>
         <img src={linkedin} />
       </a>
