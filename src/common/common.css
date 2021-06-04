@@ -50,6 +50,10 @@
   border-radius: 50%;
   border: none;
 }
+
+.bold-text {
+  font-weight: bold;
+}
 @media (min-width: 600px) {
   /* Desktop Mode */
   .nav-link {

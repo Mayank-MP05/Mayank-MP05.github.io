@@ -20,10 +20,20 @@ function Introcard() {
         </Card.Body>
       </Card>
       <Card className='m-auto no-border d-flex justify-content-center  col-md-8 col-sm-12'>
-        <p>- Loves JavaScript❤️</p>
-        <p>- Interested in Full Stack Developement and Full Stack</p>
-        <p>- Worked mostly on Web Dev and Machine Learning Projects</p>
-        <p>- Hobbies - Coding,Video Editing,Memes</p>
+        <h4>About Me </h4>
+        <p>
+          &rArr; Loves <span class='bold-text'>JavaScript❤️</span>
+        </p>
+        <p>
+          &rArr; Interested in{" "}
+          <span class='bold-text'>Full Stack Developement</span> and{" "}
+          <span class='bold-text'>Startups</span>
+        </p>
+        <p>
+          &rArr; Worked mostly on <span class='bold-text'>Web Dev</span> and{" "}
+          <span class='bold-text'>Machine Learning Projects</span>
+        </p>
+        <p>&rArr; Hobbies - Coding, Video Editing, Memes</p>
         <Sociallinks />
       </Card>
     </div>
