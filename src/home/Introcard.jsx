@@ -20,7 +20,7 @@ function Introcard() {
         </Card.Body>
       </Card>
       <Card className='m-auto no-border d-flex justify-content-center  col-md-8 col-sm-12'>
-        <p>- Loves JavaScript♥</p>
+        <p>- Loves JavaScript❤️</p>
         <p>- Interested in Full Stack Developement and Full Stack</p>
         <p>- Worked mostly on Web Dev and Machine Learning Projects</p>
         <p>- Hobbies - Coding,Video Editing,Memes</p>
