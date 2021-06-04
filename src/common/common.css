@@ -58,6 +58,11 @@
 .shadow-lg.roundedX {
   border-radius: 10px;
 }
+
+.text-black {
+  color: black;
+}
+
 @media (min-width: 600px) {
   /* Desktop Mode */
   .nav-link {
@@ -72,5 +77,8 @@
   /* Mobile View */
   .nav-link {
     margin: 0 10px;
+  }
+  .container p {
+    margin: 3px auto;
   }
 }

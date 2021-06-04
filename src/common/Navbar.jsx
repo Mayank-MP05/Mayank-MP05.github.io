@@ -68,21 +68,21 @@ function NavbarX(props) {
           <Nav className='ml-auto'>
             <Link
               to='/home'
-              className={"nav-link "}
+              className={"text-black nav-link "}
               style={ActiveTab === 0 ? underline : {}}>
               🏠Home
             </Link>
 
             <Link
               to='/projects'
-              className={"nav-link "}
+              className={"text-black nav-link "}
               style={ActiveTab === 1 ? underline : {}}>
               👨‍🏫Projects
             </Link>
 
             <Link
               to='/explore'
-              className={"nav-link "}
+              className={"text-black nav-link "}
               style={ActiveTab === 2 ? underline : {}}>
               🤩Explore
             </Link>

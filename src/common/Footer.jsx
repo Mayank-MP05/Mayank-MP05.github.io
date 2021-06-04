@@ -3,8 +3,29 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
 const FooterX = () => {
   return (
-    <Navbar bg='light' expand='lg' className='d-flex justify-content-center'>
-      <p className='nav-link'>Made with ❤️ using ReactJS</p>
+    <Navbar
+      bg='light'
+      expand='sm'
+      className='d-flex justify-content-center flex-​column'>
+      <div className='container'>
+        {" "}
+        <p className='text-black'>Made with ❤️ using ReactJS</p>
+        <br />
+        <p className='text-black'>
+          Contact :{" "}
+          <a href='mailto:mayank5pande@gmail.com' className='text-black'>
+            Email
+          </a>{" "}
+          <a
+            href='https://www.linkedin.com/in/mayank-mp5/'
+            className='text-black'>
+            LinkedIn
+          </a>{" "}
+          <a href='https://github.com/Mayank-MP05' className='text-black'>
+            Github
+          </a>
+        </p>
+      </div>
     </Navbar>
   );
 };
