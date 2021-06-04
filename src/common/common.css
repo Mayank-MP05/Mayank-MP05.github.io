@@ -78,7 +78,7 @@
   .nav-link {
     margin: 0 10px;
   }
-  .container p {
+  .container p.text-black {
     margin: 3px auto;
   }
 }

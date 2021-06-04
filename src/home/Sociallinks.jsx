@@ -10,7 +10,7 @@ function Sociallinks() {
       className='shadow-sm p-3 bg-white rounded social-links m-auto'
       style={{ marginBottom: "10px" }}>
       {LinksDB.map((el) => (
-        <Singlelink {...el} />
+        <Singlelink key={el.name} {...el} />
       ))}
     </div>
   );

@@ -22,16 +22,16 @@ function Introcard() {
       <Card className='m-auto no-border d-flex justify-content-center  col-md-8 col-sm-12'>
         <h4>About Me </h4>
         <p>
-          &rArr; Loves <span class='bold-text'>JavaScript❤️</span>
+          &rArr; Loves <span className='bold-text'>JavaScript❤️</span>
         </p>
         <p>
           &rArr; Interested in{" "}
-          <span class='bold-text'>Full Stack Developement</span> and{" "}
-          <span class='bold-text'>Startups</span>
+          <span className='bold-text'>Full Stack Developement</span> and{" "}
+          <span className='bold-text'>Startups</span>
         </p>
         <p>
-          &rArr; Worked mostly on <span class='bold-text'>Web Dev</span> and{" "}
-          <span class='bold-text'>Machine Learning Projects</span>
+          &rArr; Worked mostly on <span className='bold-text'>Web Dev</span> and{" "}
+          <span className='bold-text'>Machine Learning Projects</span>
         </p>
         <p>&rArr; Hobbies - Coding, Video Editing, Memes</p>
         <Sociallinks />

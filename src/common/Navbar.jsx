@@ -37,22 +37,22 @@ function NavbarX(props) {
   const [ActiveTab, setActiveTab] = useState(getActiveTab(useLocation()));
   const toggleNavbar = () => setCollapsed(!collapsed);
 
-  console.log(useLocation());
+  // console.log(useLocation());
   let loc = useLocation();
 
   useEffect(() => {
     setActiveTab(getActiveTab(loc));
   }, [loc]);
 
-  useEffect(() => {}, [collapsed]);
+  useEffect(() => {}, [ActiveTab]);
 
   return (
     <>
-      <Navbar bg='light' expand='lg'>
+      <Navbar bg='light' expand='lg' expanded={!collapsed}>
         <Link to='/' style={{ textDecoration: "none" }}>
           <Navbar.Brand className='navbar-brand parent-head'>
             <img src={navLogo} className='navbar-logo' />
-            <p class='head-underline'>Mayank_MP5</p>
+            <p className='head-underline'>Mayank_MP5</p>
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle
@@ -65,25 +65,28 @@ function NavbarX(props) {
           />
         </Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav' className='nav-list-container'>
-          <Nav className='ml-auto'>
+          <Nav className='ml-auto' onClick={() => toggleNavbar()}>
             <Link
               to='/home'
               className={"text-black nav-link "}
-              style={ActiveTab === 0 ? underline : {}}>
+              style={ActiveTab === 0 ? underline : {}}
+              onClick={() => toggleNavbar()}>
               🏠Home
             </Link>
 
             <Link
               to='/projects'
               className={"text-black nav-link "}
-              style={ActiveTab === 1 ? underline : {}}>
+              style={ActiveTab === 1 ? underline : {}}
+              onClick={() => toggleNavbar()}>
               👨‍🏫Projects
             </Link>
 
             <Link
               to='/explore'
               className={"text-black nav-link "}
-              style={ActiveTab === 2 ? underline : {}}>
+              style={ActiveTab === 2 ? underline : {}}
+              onClick={() => toggleNavbar()}>
               🤩Explore
             </Link>
           </Nav>
