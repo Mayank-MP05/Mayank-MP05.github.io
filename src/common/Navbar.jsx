@@ -9,7 +9,7 @@ import "./common.css";
 import navLogo from "./img/nav_logo.png";
 
 const underline = {
-  borderBottom: "2px solid gray",
+  borderBottom: "2px solid rgb(75, 9, 9, 0.623)",
   fontWeight: "bold",
   borderWidth: "50%",
 };
@@ -43,10 +43,12 @@ function NavbarX(props) {
   return (
     <>
       <Navbar bg='light' expand='lg'>
-        <Navbar.Brand to='/' className='navbar-brand'>
-          <img src={navLogo} className='navbar-logo' />
-          mayank_mp5
-        </Navbar.Brand>
+        <Link to='/' style={{ textDecoration: "none" }}>
+          <Navbar.Brand className='navbar-brand parent-head'>
+            <img src={navLogo} className='navbar-logo' />
+            <p class='head-underline'>Mayank_MP5</p>
+          </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' className='mx-3' />
         <Navbar.Collapse id='basic-navbar-nav' className='nav-list-container'>
           <Nav className='ml-auto'>

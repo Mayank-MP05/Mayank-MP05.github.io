@@ -1,7 +1,25 @@
 /* Common CSS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
-  font-family: "Montserrat", sans-se
+  font-family: "Montserrat", sans-se;
+}
+
+.head-underline {
+  border-bottom: 2px solid rgba(75, 9, 9, 0.623);
+  /* border-bottom-style: 3px solid rgb(75, 9, 9); */
+  width: 85%;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+.head-underline:hover {
+  transform: scale(1.1);
+  text-decoration: bold;
+}
+.parent-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .navbar-logo {
   width: 50px;
@@ -17,8 +35,8 @@
 }
 
 .underline {
-  border-bottom: 2px solid gray;
-  border-width: 50%;
+  border-bottom: 2px solid rgb(75, 9, 9, 0.623);
+  width: 50%;
 }
 
 .shadow-lg,
