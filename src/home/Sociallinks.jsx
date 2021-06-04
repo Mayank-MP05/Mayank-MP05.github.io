@@ -16,7 +16,9 @@ import resume from "./logos/resume.png";
 
 function Sociallinks() {
   return (
-    <div className='shadow-sm p-3 mb-5 bg-white rounded social-links'>
+    <div
+      className='shadow-sm p-3 bg-white rounded social-links m-auto'
+      style={{ marginBottom: "10px" }}>
       <a
         href='https://drive.google.com/file/d/1o4fcfhSdADrUXuGFrd313IxEnMh62NHk/view?usp=sharing'
         target='_blank'>

@@ -2,7 +2,9 @@ import React from "react";
 
 function Achievements() {
   return (
-    <div className='w-100 d-flex shadow-lg p-3 mb-5 bg-white rounded row'>
+    <div
+      className='w-100 d-flex shadow-lg p-3 bg-white rounded row m-auto'
+      style={{ marginBottom: "10px" }}>
       <p>
         🏆 Our Chemical Reaction Balancer Project was selected in Toycathon 2021
       </p>

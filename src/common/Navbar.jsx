@@ -8,6 +8,10 @@ import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "./common.css";
 import navLogo from "./img/nav_logo.png";
 
+// Close and Option Buttons
+import Option from "./img/options.png";
+import Close from "./img/close.png";
+
 const underline = {
   borderBottom: "2px solid rgb(75, 9, 9, 0.623)",
   fontWeight: "bold",
@@ -40,6 +44,8 @@ function NavbarX(props) {
     setActiveTab(getActiveTab(loc));
   }, [loc]);
 
+  useEffect(() => {}, [collapsed]);
+
   return (
     <>
       <Navbar bg='light' expand='lg'>
@@ -49,7 +55,15 @@ function NavbarX(props) {
             <p class='head-underline'>Mayank_MP5</p>
           </Navbar.Brand>
         </Link>
-        <Navbar.Toggle aria-controls='basic-navbar-nav' className='mx-3' />
+        <Navbar.Toggle
+          aria-controls='basic-navbar-nav'
+          className='mx-3 options-toggle'>
+          <img
+            src={collapsed ? Option : Close}
+            className='options-toggle'
+            onClick={toggleNavbar}
+          />
+        </Navbar.Toggle>
         <Navbar.Collapse id='basic-navbar-nav' className='nav-list-container'>
           <Nav className='ml-auto'>
             <Link
