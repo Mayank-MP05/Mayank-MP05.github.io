@@ -8,7 +8,7 @@ import Routes from "./Routes";
 function App() {
   return (
     <>
-      <HashRouter>
+      <HashRouter basename='/'>
         <NavbarX />
         <div className='container m-auto p-3'>
           {" "}
