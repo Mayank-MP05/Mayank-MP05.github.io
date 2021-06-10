@@ -12,15 +12,17 @@ const FooterX = () => {
         <p className='text-black'>Made with ❤️ using ReactJS</p>
         <br />
         <p className='text-black'>
-          Contact :{" "}
+          Contact :{" • "}
           <a href='mailto:mayank5pande@gmail.com' className='text-black'>
             Email
-          </a>{" "}
+          </a>
+          {" • "}
           <a
             href='https://www.linkedin.com/in/mayank-mp5/'
             className='text-black'>
             LinkedIn
-          </a>{" "}
+          </a>
+          {" • "}
           <a href='https://github.com/Mayank-MP05' className='text-black'>
             Github
           </a>
