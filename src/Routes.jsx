@@ -24,6 +24,9 @@ const Routes = () => {
       <Route path='/explore'>
         <Explore />
       </Route>
+      <Route path='/explore/:e_id'>
+        <ProjReadmeRender />
+      </Route>
       <Route path='/project/:p_id'>
         <ProjReadmeRender />
       </Route>
