@@ -133,6 +133,14 @@
 .card.shadow-lg.max-w-450.m-2 {
   border-radius: 10px;
 }
+
+.top-border-red {
+  border-top: 2px solid brown;
+}
+
+.bottom-border-red {
+  border-bottom: 2px solid brown;
+}
 @media (min-width: 600px) {
   /* Desktop Mode */
   .nav-link {

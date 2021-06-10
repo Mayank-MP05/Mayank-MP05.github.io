@@ -48,7 +48,11 @@ function NavbarX(props) {
 
   return (
     <>
-      <Navbar bg='light' expand='lg' expanded={!collapsed}>
+      <Navbar
+        bg='light'
+        expand='lg'
+        expanded={!collapsed}
+        className='bottom-border-red'>
         <Link to='/' style={{ textDecoration: "none" }}>
           <Navbar.Brand className='navbar-brand parent-head'>
             <img src={navLogo} className='navbar-logo' />

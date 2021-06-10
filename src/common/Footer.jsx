@@ -6,10 +6,10 @@ const FooterX = () => {
     <Navbar
       bg='light'
       expand='sm'
-      className='d-flex justify-content-center flex-​column'>
+      className='d-flex justify-content-center flex-​column top-border-red'>
       <div className='container'>
         {" "}
-        <p className='text-black'>Made with ❤️ using ReactJS</p>
+        <p className='text-black '>Made with ❤️</p>
         <br />
         <p className='text-black'>
           Contact :{" • "}
