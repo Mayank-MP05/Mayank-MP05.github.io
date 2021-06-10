@@ -3,8 +3,18 @@
 * {
   font-family: "Montserrat", sans-se;
 }
-
+.text-white {
+  color: white;
+}
 .head-underline {
+  border-bottom: 2px solid rgba(75, 9, 9, 0.623);
+  /* border-bottom-style: 3px solid rgb(75, 9, 9); */
+  width: 85%;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.underline-text {
   border-bottom: 2px solid rgba(75, 9, 9, 0.623);
   /* border-bottom-style: 3px solid rgb(75, 9, 9); */
   width: 85%;
@@ -63,6 +73,66 @@
   color: black;
 }
 
+.bg-gradientX {
+  /* background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(102, 250, 54, 1) 0%,
+    rgba(150, 211, 223, 1) 100%,
+    rgba(180, 235, 179, 1) 100%
+  ); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three-d-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  /* text-shadow: 1px 1px 1px #919191, 1px 1px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4); */
+}
+
+.border-red-bottom {
+  border-bottom: 2px solid rgba(75, 9, 9, 0.623);
+}
+
+.on-btn-img {
+  width: 30px;
+  height: 30px;
+}
+
+.max-w-100,
+.max-w-100 img {
+  max-width: 100%;
+}
+.max-w-450 {
+  text-decoration: none;
+  color: black;
+}
+
+.card-deckX {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pseudo-card {
+  justify-content: center;
+  display: flex;
+  color: black;
+  flex-direction: column;
+}
+
+.card.shadow-lg.max-w-450.m-2 {
+  border-radius: 10px;
+}
 @media (min-width: 600px) {
   /* Desktop Mode */
   .nav-link {
@@ -70,6 +140,12 @@
   }
   .nav-list-container {
     justify-content: flex-end;
+  }
+  .bg-gradientX {
+    min-height: 150px;
+  }
+  .max-w-450 {
+    max-width: 350px;
   }
 }
 
@@ -80,5 +156,11 @@
   }
   .container p.text-black {
     margin: 3px auto;
+  }
+  .bg-gradientX {
+    min-height: 150px;
+  }
+  .max-w-450 {
+    max-width: 100%;
   }
 }

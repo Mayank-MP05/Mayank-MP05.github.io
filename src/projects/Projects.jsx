@@ -3,6 +3,9 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import "./projects.css";
 
+import OnImgTitle from "../common/OnImgTitile";
+import ProjCard from "./ProjCard";
+
 //importing icons here
 import HulkHuffMan from "./data/hulk-huffman-compression.png";
 import Molequilizer from "./data/moliquilizer-logo.png";
@@ -16,6 +19,7 @@ import MDMolequilizer from "./data/molequilizer.md";
 import MDVasooliMoney from "./data/vasooli-money.md";
 import MDMarathiLetterConv from "./data/Marathi-letter-convnet.md";
 import MDCarQuality from "./data/car-quality.md";
+import { ProjectsDB } from "./ProjectsDB";
 
 const projectLinks = (idx) => {
   switch (idx) {
@@ -109,10 +113,8 @@ function Projects() {
 
   return (
     <>
-      <div className='bg-img'>
-        <h3>Projects</h3>
-      </div>
-      <div className='project-navigation'>
+      <OnImgTitle title='Projects' />
+      {/* <div className='project-navigation'>
         <img
           src={HulkHuffMan}
           className='project-logo'
@@ -138,13 +140,19 @@ function Projects() {
           className='project-logo'
           onClick={() => setActiveProject(4)}
         />
+      </div> 
+      <div className='m-2'>{projectLinks(ActiveProject)}</div>*/}
+
+      <div className='card-deckX'>
+        {ProjectsDB.map((el) => (
+          <ProjCard data={el} key={el.title} />
+        ))}
       </div>
-      <div className='m-2'>{projectLinks(ActiveProject)}</div>
       <hr />
-      <div className='container readme'>
+      {/* <div className='container readme'>
         {" "}
         <ReactMarkdown remarkPlugins={[gfm]} children={Mkdown} />
-      </div>
+      </div> */}
     </>
   );
 }
