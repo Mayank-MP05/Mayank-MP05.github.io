@@ -13,7 +13,7 @@ function Projects() {
 
       <div className='card-deckX'>
         {ProjectsDB.map((el) => (
-          <FaceCards data={el} key={el.title} />
+          <FaceCards data={el} key={el.title} redirectTo='project' />
         ))}
       </div>
       <hr />

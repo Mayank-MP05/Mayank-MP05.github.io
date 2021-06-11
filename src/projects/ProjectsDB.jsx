@@ -94,7 +94,7 @@ export const LinksRenderer = (p_id) => {
 export const ProjectsDB = [
   {
     name: "hulk-huffman-compressor",
-    title: "Hulk-Huffman Compressor",
+    title: "Hulk Compressor",
     description:
       "Huffman Compression is commonly used for lossless data compression.In this project,Image and Text Data Compression and Encryption using Huffman technique of freq tree. ",
     img: HulkHuffMan,
@@ -121,7 +121,7 @@ export const ProjectsDB = [
   },
   {
     name: "marathi-letter-recognition",
-    title: "Marathi Letter Recognition",
+    title: "Marathi Recognition",
     description:
       "Project uses Deep Learning based character recognition. The flask web server is used to minimize complexities.You can draw the character on the Canvas and model will predict the character",
     img: MarathiLetterConv,
