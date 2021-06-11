@@ -156,6 +156,7 @@
   color: white;
   text-decoration: bold;
 }
+
 @media (min-width: 600px) {
   /* Desktop Mode */
   .nav-link {
@@ -169,6 +170,11 @@
   }
   .max-w-450 {
     max-width: 350px;
+  }
+  .meme-iframe {
+    width: 100%;
+    margin: auto;
+    height: 550px;
   }
 }
 
@@ -185,5 +191,10 @@
   }
   .max-w-450 {
     max-width: 100%;
+  }
+  .meme-iframe {
+    width: 100%;
+    margin: auto;
+    height: 280px;
   }
 }

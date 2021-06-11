@@ -12,6 +12,7 @@ import Projects from "./projects/Projects";
 import Explore from "./explore/Explore";
 import ProjReadmeRender from "./projects/ProjReadmeRender";
 import ExploreReadmeRender from "./explore/ExploreReadmeRender";
+import Memes from "./common/Memes";
 
 const Routes = () => {
   return (
@@ -30,6 +31,9 @@ const Routes = () => {
       </Route>
       <Route path='/project/:p_id'>
         <ProjReadmeRender />
+      </Route>
+      <Route path='/memes'>
+        <Memes />
       </Route>
       <Route exact path='/'>
         <Redirect to='/home' />
