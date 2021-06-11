@@ -27,7 +27,7 @@ function LinksBtn({ link, title }) {
   }, []);
 
   return (
-    <a href={link} className='btn btn-outline-info m-1'>
+    <a href={link} className='btn btn-outline-brown m-1'>
       <img src={Img} className='on-btn-img' />
       {title}
     </a>

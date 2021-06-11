@@ -16,75 +16,52 @@ import LinksBtn from "./LinksBtn";
 
 export const LinksRenderer = (p_id) => {
   switch (p_id) {
-    case "hulk-huffman-compressor":
+    case "face-recognition-system":
+      return (
+        <>
+          <LinksBtn
+            title={"Github"}
+            link={`https://github.com/Mayank-MP05/Deep-Learning-Face-Recognition-ML-DL`}
+          />
+        </>
+      );
+    case "spacex-informer":
       return (
         <>
           <LinksBtn
             title={"Live Demo"}
-            link={`https://hulk-huffman-compressor.netlify.app/`}
+            link={`https://the-spacex-informer.netlify.app/`}
           />
+          <LinksBtn
+            title={"Github"}
+            link={`https://github.com/Mayank-MP05/SpaceX-Info-React-Ionic-App`}
+          />
+        </>
+      );
+    case "nemo-goa-guide":
+      return (
+        <>
+          <LinksBtn
+            title={"Github"}
+            link={`https://github.com/Mayank-MP05/SIH_Goa_Info_Web-Android_App`}
+          />
+        </>
+      );
+    case "exam-beep":
+      return (
+        <>
           <LinksBtn
             title={"Frontend"}
-            link={`https://github.com/Mayank-MP05/Hulk-Compressor-Frontend`}
-          />
+            link={`https://github.com/Mayank-MP05/Exam_Beep_Frontend`}
+          />{" "}
           <LinksBtn
             title={"Backend"}
-            link={`https://github.com/Mayank-MP05/Hulk-Huffman-Backend`}
+            link={`https://github.com/Mayank-MP05/Exam_Beep_Backend`}
           />
         </>
       );
-    case "molequilizer":
-      return (
-        <>
-          <LinksBtn
-            title={"Live Demo"}
-            link={`https://team-molequilizer.web.app/`}
-          />
-          <LinksBtn
-            title={"Github"}
-            link={`https://github.com/Mayank-MP05/molequilizer`}
-          />
-        </>
-      );
-    case "vasooli-money-manager":
-      return (
-        <>
-          <LinksBtn
-            title={"Live Demo"}
-            link={`https://vasoolimoney.web.app/`}
-          />
-          <LinksBtn
-            title={"Frontend"}
-            link={`https://github.com/Mayank-MP05/Vasooli-Money-Manager-and-Accounting-Solution-React-Firebase`}
-          />
-          <LinksBtn
-            title={"Backend"}
-            link={`https://github.com/Mayank-MP05/Vasooli-Express-Firebase-functions`}
-          />
-        </>
-      );
-    case "marathi-letter-recognition":
-      return (
-        <>
-          <LinksBtn
-            title={"Github"}
-            link={`https://github.com/Mayank-MP05/Marathi-Letter-Recognition-ConvNet`}
-          />
-        </>
-      );
-    case "car-quality-prediction":
-      return (
-        <>
-          <LinksBtn
-            title={"Live Demo"}
-            link={`https://car-quality-prediction.herokuapp.com/`}
-          />
-          <LinksBtn
-            title={"Github"}
-            link={`https://github.com/Mayank-MP05/Car-Quality-Full-Stack-ML-Project`}
-          />
-        </>
-      );
+    case "memes":
+      return <></>;
   }
 };
 
@@ -111,7 +88,7 @@ export const ExploreDB = [
     name: "nemo-goa-guide",
     title: "Nemo-The Goa Guide",
     description:
-      "This is full flesh money manager app.This app lets us track all your transactions and cash flows whether you spend it or lend it to someone or from someone",
+      "Built using Plain Stack and Cordova Wrapper.This Android App lets you updated about the history origin location and picture of this famous tourist attractions",
     img: Nemo,
     readme: MDNemo,
     links: LinksRenderer("nemo-goa-guide"),
@@ -120,7 +97,7 @@ export const ExploreDB = [
     name: "exam-beep",
     title: "Exam Beep Notifier",
     description:
-      "Project uses Deep Learning based character recognition. The flask web server is used to minimize complexities.You can draw the character on the Canvas and model will predict the character",
+      "Hackathon Project:C olleges just need to post the details in the CSV format and students will be notified.This help reduce overall chaos by acting as one-stop solution",
     img: ExamBeep,
     readme: MDExamBeep,
     links: LinksRenderer("exam-beep"),
@@ -129,7 +106,7 @@ export const ExploreDB = [
     name: "memes",
     title: "Memes-Just for Fun",
     description:
-      "Using Decision Tree and SVM to really process the input attributes of the car sent over flask server and displaying the predicted output (Categorical Nature)",
+      "Memes and Video Editing archives - JUST FOR FUN - NOT for serious peoples",
     img: Memes,
     readme: MDMemes,
     links: LinksRenderer("memes"),

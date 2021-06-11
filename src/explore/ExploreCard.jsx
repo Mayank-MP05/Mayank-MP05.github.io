@@ -11,7 +11,7 @@ function ExploreCard({ data }) {
     <>
       {Data ? (
         <Link
-          to={`/project/${Data.name}`}
+          to={`/explore/${Data.name}`}
           className='card shadow-lg max-w-450 m-2'>
           <div className='pseudo-card'>
             <img

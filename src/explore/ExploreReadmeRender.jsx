@@ -8,9 +8,9 @@ import { LinksRenderer, ExploreDB } from "./ExploreDB";
 function ExploreReadmeRender() {
   const [Mkdown, setMkdown] = useState("Loading...");
   const [redir, setredir] = useState(false);
-  let { p_id } = useParams();
+  let { e_id } = useParams();
   useEffect(() => {
-    let arr = ProjectsDB.filter((el) => el.name === p_id);
+    let arr = ExploreDB.filter((el) => el.name === e_id);
     // setMkdown(arr[0].readme);
     if (arr.length === 1) {
       // Fetch the Readme
@@ -28,7 +28,7 @@ function ExploreReadmeRender() {
   return (
     <>
       {redir ? <Redirect to='/projects' /> : ""}
-      <div className='d-flex'>{LinksRenderer(p_id)}</div>
+      <div className='d-flex'>{LinksRenderer(e_id)}</div>
       <hr className='my-1' />
       <div className='max-w-100'>
         <ReactMarkdown remarkPlugins={[gfm]} children={Mkdown} />

@@ -11,6 +11,7 @@ import Home from "./home/Home";
 import Projects from "./projects/Projects";
 import Explore from "./explore/Explore";
 import ProjReadmeRender from "./projects/ProjReadmeRender";
+import ExploreReadmeRender from "./explore/ExploreReadmeRender";
 
 const Routes = () => {
   return (
@@ -21,11 +22,11 @@ const Routes = () => {
       <Route path='/projects'>
         <Projects />
       </Route>{" "}
+      <Route path='/explore/:e_id'>
+        <ExploreReadmeRender />
+      </Route>
       <Route path='/explore'>
         <Explore />
-      </Route>
-      <Route path='/explore/:e_id'>
-        <ProjReadmeRender />
       </Route>
       <Route path='/project/:p_id'>
         <ProjReadmeRender />

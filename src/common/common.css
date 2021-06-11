@@ -142,6 +142,20 @@
 .bottom-border-red {
   border-bottom: 2px solid brown;
 }
+
+.btn-outline-brown {
+  border: 2px solid brown;
+  background-color: rgba(165, 42, 42, 0.192);
+  border-radius: 10px;
+  text-decoration: bold;
+}
+
+.btn-outline-brown:hover {
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(165, 42, 42);
+  color: white;
+  text-decoration: bold;
+}
 @media (min-width: 600px) {
   /* Desktop Mode */
   .nav-link {

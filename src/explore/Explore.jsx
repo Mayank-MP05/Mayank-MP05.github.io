@@ -17,6 +17,8 @@ import MDExamBeep from "./exploreData/exam-beep.md";
 import MDMemes from "./exploreData/memes.md";
 
 import OnImgTitle from "../common/OnImgTitile";
+import { ExploreDB } from "./ExploreDB";
+import ExploreCard from "./ExploreCard";
 
 const projectLinks = (idx) => {
   switch (idx) {
@@ -89,7 +91,7 @@ function Explore() {
           "These are the things I tried sometimes for learning sometimes for fun😁"
         }
       />
-      <div className='project-navigation'>
+      {/* <div className='project-navigation'>
         <img
           src={FaceDetction}
           className='project-logo'
@@ -116,12 +118,18 @@ function Explore() {
           onClick={() => setActiveProject(4)}
         />
       </div>
-      <div className='m-2'>{projectLinks(ActiveProject)}</div>
+      <div className='m-2'>{projectLinks(ActiveProject)}</div> */}
       <hr />
-      <div className='container readme'>
+      <div className='card-deckX'>
+        {ExploreDB.map((el) => (
+          <ExploreCard data={el} key={el.title} />
+        ))}
+      </div>
+      <hr />
+      {/* <div className='container readme'>
         {" "}
         <ReactMarkdown remarkPlugins={[gfm]} children={Mkdown} />
-      </div>
+      </div> */}
     </>
   );
 }
