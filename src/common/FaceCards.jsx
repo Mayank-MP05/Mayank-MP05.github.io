@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-function ProjCard({ data }) {
+function FaceCards({ data }) {
   const [Data, setData] = useState({ description: "" });
 
   useEffect(() => {
@@ -11,7 +11,7 @@ function ProjCard({ data }) {
     <>
       {Data ? (
         <Link
-          to={`/project/${Data.name}`}
+          to={`/explore/${Data.name}`}
           className='card shadow-lg max-w-450 m-2'>
           <div className='pseudo-card'>
             <img
@@ -35,4 +35,4 @@ function ProjCard({ data }) {
   );
 }
 
-export default ProjCard;
+export default FaceCards;
