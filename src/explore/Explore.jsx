@@ -16,6 +16,8 @@ import MDNemo from "./exploreData/Nemo-goa-guide.md";
 import MDExamBeep from "./exploreData/exam-beep.md";
 import MDMemes from "./exploreData/memes.md";
 
+import OnImgTitle from "../common/OnImgTitile";
+
 const projectLinks = (idx) => {
   switch (idx) {
     case 0:
@@ -81,13 +83,12 @@ function Explore() {
 
   return (
     <>
-      <div className='bg-img'>
-        <h3>Explore</h3>
-        <p>
-          These are the things I tried sometimes for learning sometimes for
-          fun😁
-        </p>
-      </div>
+      <OnImgTitle
+        title='Explore'
+        subtitle={
+          "These are the things I tried sometimes for learning sometimes for fun😁"
+        }
+      />
       <div className='project-navigation'>
         <img
           src={FaceDetction}
