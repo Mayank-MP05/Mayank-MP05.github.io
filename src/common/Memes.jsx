@@ -19,13 +19,6 @@ function Memes() {
         title='Memes'
         subtitle='Just for FUN😊, Nothing serious here🙏'
       />
-      {/* <iframe
-        src='https://www.youtube.com/embed/pRsYuBeXOuc'
-        className='meme-iframe'
-        title='YouTube video player'
-        frameborder='0'
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-        allowfullscreen></iframe> */}
 
       {YoutubeLinks.map((lnk) => (
         <iframe

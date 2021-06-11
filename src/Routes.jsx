@@ -23,6 +23,9 @@ const Routes = () => {
       <Route path='/projects'>
         <Projects />
       </Route>{" "}
+      <Route path='/explore/memes'>
+        <Redirect to='/memes' />
+      </Route>
       <Route path='/explore/:e_id'>
         <ExploreReadmeRender />
       </Route>

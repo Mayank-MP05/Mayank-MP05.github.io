@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import Github from "../common/img/github.png";
-import Frontend from "../common/img/front-end.png";
-import BackEnd from "../common/img/backend.png";
-import LiveDemo from "../common/img/live-demo.png";
+import Github from "./img/github.png";
+import Frontend from "./img/front-end.png";
+import BackEnd from "./img/backend.png";
+import LiveDemo from "./img/live-demo.png";
 
 function LinksBtn({ link, title }) {
   const [Img, setImg] = useState(Github);
@@ -27,7 +27,7 @@ function LinksBtn({ link, title }) {
   }, []);
 
   return (
-    <a href={link} className='btn btn-outline-info m-1'>
+    <a href={link} target='_blank' className='btn btn-outline-brown m-1'>
       <img src={Img} className='on-btn-img' />
       {title}
     </a>

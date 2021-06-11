@@ -1,3 +1,5 @@
+import { Redirect } from "react-router-dom";
+
 // importing icons here
 import FaceDetction from "./exploreData/face-detection-and-recognition.png";
 import SpaceX from "./exploreData/spaceX.png";
@@ -12,7 +14,7 @@ import MDNemo from "./exploreData/Nemo-goa-guide.md";
 import MDExamBeep from "./exploreData/exam-beep.md";
 import MDMemes from "./exploreData/memes.md";
 
-import LinksBtn from "./LinksBtn";
+import LinksBtn from "../common/LinksBtn";
 
 export const LinksRenderer = (p_id) => {
   switch (p_id) {
@@ -60,8 +62,8 @@ export const LinksRenderer = (p_id) => {
           />
         </>
       );
-    case "memes":
-      return <></>;
+    default:
+      return <Redirect to='/explore' />;
   }
 };
 
