@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 import { LinksRenderer, ProjectsDB } from "./ProjectsDB";
 
+import { Helmet } from "react-helmet";
+
 function ProjReadmeRender() {
   const [Mkdown, setMkdown] = useState("Loading...");
   const [redir, setredir] = useState(false);
@@ -28,6 +30,11 @@ function ProjReadmeRender() {
   return (
     <>
       {redir ? <Redirect to='/projects' /> : ""}
+      <Helmet>
+        <title>Projects | Mayank_MP5</title>
+        <meta name='description' content={Mkdown} />
+        <meta name='keywords' content={Mkdown} />
+      </Helmet>
       <div className='d-flex'>{LinksRenderer(p_id)}</div>
       <hr className='my-1' />
       <div className='max-w-100'>
