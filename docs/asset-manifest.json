@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a7d33db9.chunk.css",
-    "main.js": "/static/js/main.6820e125.chunk.js",
-    "main.js.map": "/static/js/main.6820e125.chunk.js.map",
+    "main.js": "/static/js/main.0d5d8b1f.chunk.js",
+    "main.js.map": "/static/js/main.0d5d8b1f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6562de6c.js",
     "runtime-main.js.map": "/static/js/runtime-main.6562de6c.js.map",
     "static/css/2.61b4cb56.chunk.css": "/static/css/2.61b4cb56.chunk.css",
@@ -13,6 +13,8 @@
     "static/css/main.a7d33db9.chunk.css.map": "/static/css/main.a7d33db9.chunk.css.map",
     "static/js/2.a3d78f1e.chunk.js.LICENSE.txt": "/static/js/2.a3d78f1e.chunk.js.LICENSE.txt",
     "static/media/Hulk-huffman-compression.a69ec227.md": "/static/media/Hulk-huffman-compression.a69ec227.md",
+    "static/media/MDHitech-controls.a8bbce02.md": "/static/media/MDHitech-controls.a8bbce02.md",
+    "static/media/MDteam-automatons.3b54389c.md": "/static/media/MDteam-automatons.3b54389c.md",
     "static/media/Marathi-letter-convnet.ad52eb5f.md": "/static/media/Marathi-letter-convnet.ad52eb5f.md",
     "static/media/Marathi-letter-convnet.e666a1fd.png": "/static/media/Marathi-letter-convnet.e666a1fd.png",
     "static/media/Mayank-Pachpande-bg-img-edited.6bd90375.jpg": "/static/media/Mayank-Pachpande-bg-img-edited.6bd90375.jpg",
@@ -42,6 +44,6 @@
     "static/css/2.61b4cb56.chunk.css",
     "static/js/2.a3d78f1e.chunk.js",
     "static/css/main.a7d33db9.chunk.css",
-    "static/js/main.6820e125.chunk.js"
+    "static/js/main.0d5d8b1f.chunk.js"
   ]
 }
