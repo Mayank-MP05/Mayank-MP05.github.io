@@ -123,7 +123,7 @@ export const ProjectsDB = [
     name: "marathi-letter-recognition",
     title: "Marathi Recognition",
     description:
-      "Project uses Deep Learning based character recognition. The flask web server is used to minimize complexities.You can draw the character on the Canvas and model will predict the character",
+      "Project uses Deep Learning based character recognition. The flask web server is used to minimize complexities.The drawn character on the Canvas will be recognized",
     img: MarathiLetterConv,
     readme: MDMarathiLetterConv,
     links: LinksRenderer("marathi-letter-recognition"),

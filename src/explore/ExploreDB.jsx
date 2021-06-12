@@ -6,6 +6,8 @@ import SpaceX from "./exploreData/spaceX.png";
 import Nemo from "./exploreData/Nemo.png";
 import ExamBeep from "./exploreData/exam-beep.png";
 import Memes from "./exploreData/memes.png";
+import TeamAutomatons from "./exploreData/team-automatons.png";
+import Hitech from "./exploreData/hitech-controls.png";
 
 // importing markdowns
 import MDFaceDetection from "./exploreData/face-detection-and-recognition.md";
@@ -13,6 +15,8 @@ import MDSpaceX from "./exploreData/SpaceX.md";
 import MDNemo from "./exploreData/Nemo-goa-guide.md";
 import MDExamBeep from "./exploreData/exam-beep.md";
 import MDMemes from "./exploreData/memes.md";
+import MDteamAuto from "./exploreData/MDteam-automatons.md";
+import MDHiTech from "./exploreData/MDHitech-controls.md";
 
 import LinksBtn from "../common/LinksBtn";
 
@@ -59,6 +63,32 @@ export const LinksRenderer = (p_id) => {
           <LinksBtn
             title={"Backend"}
             link={`https://github.com/Mayank-MP05/Exam_Beep_Backend`}
+          />
+        </>
+      );
+    case "team-automatons":
+      return (
+        <>
+          <LinksBtn
+            title={"Live Demo"}
+            link={`https://mayank-mp05.github.io/Team_Automatons_website/`}
+          />{" "}
+          <LinksBtn
+            title={"Github"}
+            link={`https://github.com/Mayank-MP05/Team_Automatons_website`}
+          />
+        </>
+      );
+    case "hitech-controls":
+      return (
+        <>
+          <LinksBtn
+            title={"Live Demo"}
+            link={`https://hitech-new.netlify.app/`}
+          />{" "}
+          <LinksBtn
+            title={"Github"}
+            link={`https://github.com/Mayank-MP05/HiTech-New`}
           />
         </>
       );
@@ -112,5 +142,23 @@ export const ExploreDB = [
     img: Memes,
     readme: MDMemes,
     links: LinksRenderer("memes"),
+  },
+  {
+    name: "team-automatons",
+    title: "Team Automatons Website",
+    description:
+      "PCCOE's Robotics Website designed for Sponsorships and marketing purposes include designing and SEO of the website",
+    img: TeamAutomatons,
+    readme: MDteamAuto,
+    links: LinksRenderer("team-automatons"),
+  },
+  {
+    name: "hitech-controls",
+    title: "Hi-Tech Controls website",
+    description:
+      "They provides various products like Lift inverters, Stabilizers, Solar Rooftop System and other related products. Building their website and SEO for the website",
+    img: Hitech,
+    readme: MDHiTech,
+    links: LinksRenderer("hitech-controls"),
   },
 ];
