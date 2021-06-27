@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a7d33db9.chunk.css",
-    "main.js": "/static/js/main.0d5d8b1f.chunk.js",
-    "main.js.map": "/static/js/main.0d5d8b1f.chunk.js.map",
+    "main.js": "/static/js/main.be5d2eeb.chunk.js",
+    "main.js.map": "/static/js/main.be5d2eeb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6562de6c.js",
     "runtime-main.js.map": "/static/js/runtime-main.6562de6c.js.map",
     "static/css/2.61b4cb56.chunk.css": "/static/css/2.61b4cb56.chunk.css",
@@ -14,6 +14,7 @@
     "static/js/2.a3d78f1e.chunk.js.LICENSE.txt": "/static/js/2.a3d78f1e.chunk.js.LICENSE.txt",
     "static/media/Hulk-huffman-compression.a69ec227.md": "/static/media/Hulk-huffman-compression.a69ec227.md",
     "static/media/MDHitech-controls.a8bbce02.md": "/static/media/MDHitech-controls.a8bbce02.md",
+    "static/media/MDUnicktoe.4482408f.md": "/static/media/MDUnicktoe.4482408f.md",
     "static/media/MDteam-automatons.3b54389c.md": "/static/media/MDteam-automatons.3b54389c.md",
     "static/media/Marathi-letter-convnet.ad52eb5f.md": "/static/media/Marathi-letter-convnet.ad52eb5f.md",
     "static/media/Marathi-letter-convnet.e666a1fd.png": "/static/media/Marathi-letter-convnet.e666a1fd.png",
@@ -33,10 +34,11 @@
     "static/media/live-demo.7d02146c.png": "/static/media/live-demo.7d02146c.png",
     "static/media/memes.529c8072.png": "/static/media/memes.529c8072.png",
     "static/media/memes.ee465ac7.md": "/static/media/memes.ee465ac7.md",
-    "static/media/molequilizer.5371a7f2.md": "/static/media/molequilizer.5371a7f2.md",
+    "static/media/molequilizer.f43f7231.md": "/static/media/molequilizer.f43f7231.md",
     "static/media/moliquilizer-logo.fcff617e.png": "/static/media/moliquilizer-logo.fcff617e.png",
     "static/media/nav_logo.eed45bfc.png": "/static/media/nav_logo.eed45bfc.png",
     "static/media/twitter.a5def851.png": "/static/media/twitter.a5def851.png",
+    "static/media/unicktoe.72fa782c.png": "/static/media/unicktoe.72fa782c.png",
     "static/media/vasooli-money.4e586bf9.md": "/static/media/vasooli-money.4e586bf9.md"
   },
   "entrypoints": [
@@ -44,6 +46,6 @@
     "static/css/2.61b4cb56.chunk.css",
     "static/js/2.a3d78f1e.chunk.js",
     "static/css/main.a7d33db9.chunk.css",
-    "static/js/main.0d5d8b1f.chunk.js"
+    "static/js/main.be5d2eeb.chunk.js"
   ]
 }
