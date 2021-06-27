@@ -138,3 +138,4 @@ export const ProjectsDB = [
     links: LinksRenderer("car-quality-prediction"),
   },
 ];
+ProjectsDB.sort(() => Math.random() - 0.5);

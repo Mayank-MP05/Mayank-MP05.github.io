@@ -8,6 +8,7 @@ import ExamBeep from "./exploreData/exam-beep.png";
 import Memes from "./exploreData/memes.png";
 import TeamAutomatons from "./exploreData/team-automatons.png";
 import Hitech from "./exploreData/hitech-controls.png";
+import Unicktoe from "./exploreData/unicktoe.png";
 
 // importing markdowns
 import MDFaceDetection from "./exploreData/face-detection-and-recognition.md";
@@ -17,6 +18,7 @@ import MDExamBeep from "./exploreData/exam-beep.md";
 import MDMemes from "./exploreData/memes.md";
 import MDteamAuto from "./exploreData/MDteam-automatons.md";
 import MDHiTech from "./exploreData/MDHitech-controls.md";
+import MDUnicktoe from "./exploreData/MDUnicktoe.md";
 
 import LinksBtn from "../common/LinksBtn";
 
@@ -92,6 +94,20 @@ export const LinksRenderer = (p_id) => {
           />
         </>
       );
+    case "unicktoe":
+      return (
+        <>
+          <LinksBtn
+            title={"Live Demo"}
+            link={`https://play.google.com/store/apps/details?id=com.firstkit.unicktoe&hl=en_US&gl=US`}
+          />{" "}
+          <LinksBtn
+            title={"Github"}
+            link={`https://github.com/Mayank-MP05/U-Nick-Toe`}
+          />
+        </>
+      );
+
     default:
       return <Redirect to='/explore' />;
   }
@@ -161,4 +177,15 @@ export const ExploreDB = [
     readme: MDHiTech,
     links: LinksRenderer("hitech-controls"),
   },
+  {
+    name: "unicktoe",
+    title: "U-Nick-Toe Game",
+    description:
+      "Two player tic-tac-toe game with the unique twist of having limited pawns so that you have to move the existing ones have 1300 downloads on playstore",
+    img: Unicktoe,
+    readme: MDUnicktoe,
+    links: LinksRenderer("unicktoe"),
+  },
 ];
+
+ExploreDB.sort(() => Math.random() - 0.5);
