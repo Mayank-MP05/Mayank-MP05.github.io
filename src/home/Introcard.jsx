@@ -10,7 +10,7 @@ const Introcard = () => {
     <div className="w-100 d-flex shadow-lg p-3 mb-5 bg-white roundedX row m-auto">
       <Card className="left-card no-border m-auto col-md-4 col-sm-12">
         <Card.Body>
-          <Image src={MayankBgEditedIcon} width={500} height={500} className />
+          <Image src={MayankBgEditedIcon} width={150} height={150}  />
           <Card.Title>Mayank Pachpande</Card.Title>
           <Card.Text>Software Development Engineer</Card.Text>
           <Link href="/projects" className="font-weight-bold">
