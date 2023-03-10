@@ -1,9 +1,9 @@
-//importing icons here
-import HulkHuffMan from "./data/hulk-huffman-compression.png";
-import Molequilizer from "./data/moliquilizer-logo.png";
-import VasooliMoney from "./data/vasooli-money.png";
-import MarathiLetterConv from "./data/Marathi-letter-convnet.png";
-import CarQuality from "./data/car-quality.png";
+// IMPORTS: Importing project logos here
+const HulkHuffMan = "/static/project-icons/hulk-huffman-compression.png";
+const Molequilizer = "/static/project-icons/moliquilizer-logo.png";
+const VasooliMoney = "/static/project-icons/vasooli-money.png";
+const MarathiLetterConv = "/static/project-icons/Marathi-letter-convnet.png";
+const CarQuality = "/static/project-icons/car-quality.png";
 
 // importing markdowns
 import MDHulkHuffMan from "./data/Hulk-huffman-compression.md";

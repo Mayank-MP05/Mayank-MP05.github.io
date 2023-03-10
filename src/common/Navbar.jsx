@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import "jquery/dist/jquery";
-import Image from 'next/image'
+import Image from "next/image";
 
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
-import navLogo from "./img/nav_logo.png";
-
-// Close and Option Buttons
-import Option from "./img/options.png";
-import Close from "./img/close.png";
+// IMPORTS: Images imports
+const NavbarLogoIcon = "/static/common/nav-logo.png";
+const OptionsIcon = "/static/common/options.png";
+const CloseBtnIcon = "/static/common/close.png";
 
 const underline = {
   borderBottom: "2px solid rgb(75, 9, 9, 0.623)",
@@ -41,8 +40,6 @@ function NavbarX(props) {
     }
   }, []);
 
-  useEffect(() => {}, [ActiveTab]);
-
   return (
     <>
       <Navbar
@@ -53,7 +50,7 @@ function NavbarX(props) {
       >
         <Link href="/" style={{ textDecoration: "none" }}>
           <Navbar.Brand className="navbar-brand parent-head">
-            <Image src={navLogo} className="navbar-logo" />
+            <Image src={NavbarLogoIcon} className="navbar-logo" />
             <p className="head-underline">Mayank_MP5</p>
           </Navbar.Brand>
         </Link>
@@ -62,7 +59,7 @@ function NavbarX(props) {
           className="mx-3 options-toggle"
         >
           <Image
-            src={collapsed ? Option : Close}
+            src={collapsed ? OptionsIcon : CloseBtnIcon}
             className="options-toggle"
             onClick={toggleNavbar}
           />

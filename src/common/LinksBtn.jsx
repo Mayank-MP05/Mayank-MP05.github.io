@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-import Github from "./img/github.png";
-import Frontend from "./img/front-end.png";
-import BackEnd from "./img/backend.png";
-import LiveDemo from "./img/live-demo.png";
+const GithubIcon = "/static/common/github.png";
+const FrontendIcon = "/static/common/front-end.png";
+const BackEndIcon = "/static/common/back-end.png";
+const LiveDemoIcon = "/static/common/live-demo.png";
 
 function LinksBtn({ link, title }) {
-  const [Img, setImg] = useState(Github);
+  const [Img, setImg] = useState(GithubIcon);
   useEffect(() => {
     switch (title.toLowerCase()) {
       case "github":
-        setImg(Github);
+        setImg(GithubIcon);
         break;
       case "frontend":
-        setImg(Frontend);
+        setImg(FrontendIcon);
         break;
       case "backend":
-        setImg(BackEnd);
+        setImg(BackEndIcon);
         break;
       case "live demo":
-        setImg(LiveDemo);
+        setImg(LiveDemoIcon);
         break;
       default:
         break;
