@@ -1,5 +1,6 @@
 import React from "react";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
+import Image from 'next/image'
 
 const renderTooltip = (content) => (
   <Tooltip id='button-tooltip'>{content}</Tooltip>
@@ -10,7 +11,7 @@ const Singlelink = ({ name, link, img }) => {
     <div>
       <OverlayTrigger placement='top' overlay={renderTooltip(name)}>
         <a href={link} target='_blank'>
-          <img src={img} />
+          <Image src={img} />
         </a>
       </OverlayTrigger>
     </div>

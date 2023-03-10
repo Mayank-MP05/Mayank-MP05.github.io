@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from 'next/image'
+
 function FaceCards({ data, redirectTo }) {
   const [Data, setData] = useState({ description: "" });
 
@@ -14,7 +16,7 @@ function FaceCards({ data, redirectTo }) {
           href={`/${redirectTo ? redirectTo : "explore"}/${Data.name}`}
           className='card shadow-lg max-w-450 m-2'>
           <div className='pseudo-card'>
-            <img
+            <Image
               className='card-img-top w-50 m-auto justify-content-around'
               src={Data.img}
               alt={Data.description}

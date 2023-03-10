@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import "jquery/dist/jquery";
+import Image from 'next/image'
 
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
@@ -52,7 +53,7 @@ function NavbarX(props) {
       >
         <Link href="/" style={{ textDecoration: "none" }}>
           <Navbar.Brand className="navbar-brand parent-head">
-            <img src={navLogo} className="navbar-logo" />
+            <Image src={navLogo} className="navbar-logo" />
             <p className="head-underline">Mayank_MP5</p>
           </Navbar.Brand>
         </Link>
@@ -60,7 +61,7 @@ function NavbarX(props) {
           aria-controls="basic-navbar-nav"
           className="mx-3 options-toggle"
         >
-          <img
+          <Image
             src={collapsed ? Option : Close}
             className="options-toggle"
             onClick={toggleNavbar}

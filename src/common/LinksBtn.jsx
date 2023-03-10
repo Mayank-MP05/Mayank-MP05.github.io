@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 import Github from "./img/github.png";
 import Frontend from "./img/front-end.png";
@@ -27,8 +28,8 @@ function LinksBtn({ link, title }) {
   }, []);
 
   return (
-    <a href={link} target='_blank' className='btn btn-outline-brown m-1'>
-      <img src={Img} className='on-btn-img' />
+    <a href={link} target="_blank" className="btn btn-outline-brown m-1">
+      <Image src={Img} className="on-btn-img" />
       {title}
     </a>
   );
