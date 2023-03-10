@@ -6,7 +6,7 @@ import { LinksRenderer, ExploreDB } from "./ExploreDB";
 import { Helmet } from "react-helmet";
 import { useRouter } from "next/router";
 
-function ExploreReadmeRender() {
+const ExploreReadmeRender = ( ) => {
   const router = useRouter();
 
   const [Mkdown, setMkdown] = useState("Loading...");

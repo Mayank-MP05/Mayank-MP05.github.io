@@ -5,7 +5,7 @@ import { ExploreDB } from "./ExploreDB";
 import FaceCards from "../common/FaceCards";
 import { Helmet } from "react-helmet";
 
-function Explore() {
+const Explore = ( ) => {
   return (
     <>
       <Helmet>

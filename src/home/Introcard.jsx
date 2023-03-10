@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import MayankImg from "./Mayank-Pachpande-bg-img-edited.jpg";
 import Sociallinks from "./Sociallinks";
-function Introcard() {
+const Introcard = ( ) => {
   return (
     <div className='w-100 d-flex shadow-lg p-3 mb-5 bg-white roundedX row m-auto'>
       <Card className='left-card no-border m-auto col-md-4 col-sm-12'>

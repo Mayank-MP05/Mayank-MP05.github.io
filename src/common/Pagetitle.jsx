@@ -1,6 +1,6 @@
 import React from "react";
 
-function Pagetitle() {
+const Pagetitle = ( ) => {
   return <div>This is Pagetitle</div>;
 }
 

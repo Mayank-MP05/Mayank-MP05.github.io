@@ -1,6 +1,6 @@
 import React from "react";
 
-function Achievements() {
+const Achievements = ( ) => {
   return (
     <div
       className='w-100 d-flex shadow-lg p-3 bg-white roundedX row m-auto'

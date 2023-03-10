@@ -4,7 +4,7 @@ import Introcard from "./Introcard";
 import Achievements from "./Achievements";
 import Sociallinks from "./Sociallinks";
 
-function Home() {
+const Home = ( ) => {
   return (
     <>
       <Introcard />

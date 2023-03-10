@@ -6,7 +6,7 @@ import FaceCards from "../common/FaceCards";
 import { ProjectsDB } from "./ProjectsDB";
 import { Helmet } from "react-helmet";
 
-function Projects() {
+const Projects = ( ) => {
   return (
     <>
       <Helmet>

@@ -5,7 +5,7 @@ import { LinksRenderer, ProjectsDB } from "./ProjectsDB";
 
 import { Helmet } from "react-helmet";
 
-function ProjReadmeRender() {
+const ProjReadmeRender = ( ) => {
   const [Mkdown, setMkdown] = useState("Loading...");
   const [redir, setredir] = useState(false);
   let { p_id } = useParams();
