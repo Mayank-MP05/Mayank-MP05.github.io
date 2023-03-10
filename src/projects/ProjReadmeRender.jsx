@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
-import { useParams } from "react-router-dom";
-import { Redirect } from "react-router-dom";
 import { LinksRenderer, ProjectsDB } from "./ProjectsDB";
 
 import { Helmet } from "react-helmet";
@@ -29,7 +27,7 @@ function ProjReadmeRender() {
 
   return (
     <>
-      {redir ? <Redirect to='/projects' /> : ""}
+      {/* {redir ? <Redirect to='/projects' /> : ""} */}
       <Helmet>
         <title>Projects | Mayank_MP5</title>
         <meta name='description' content={Mkdown} />

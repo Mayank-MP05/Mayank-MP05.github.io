@@ -1,4 +1,3 @@
-import { Redirect } from "react-router-dom";
 
 // importing icons here
 import FaceDetction from "./exploreData/face-detection-and-recognition.png";
@@ -109,7 +108,7 @@ export const LinksRenderer = (p_id) => {
       );
 
     default:
-      return <Redirect to='/explore' />;
+      return <p>{`<Redirect to='/explore' />;`}</p>;
   }
 };
 

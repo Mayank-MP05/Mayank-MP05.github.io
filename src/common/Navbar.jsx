@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import "jquery/dist/jquery";
-import "bootstrap/dist/js/bootstrap.min.js";
 
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
@@ -30,66 +29,69 @@ const getActiveTab = (obj) => {
   }
 };
 function NavbarX(props) {
-  const [collapsed, setCollapsed] = useState(
-    window.innerWidth < 600 ? true : false
-  );
-  const [ActiveTab, setActiveTab] = useState(getActiveTab(useLocation()));
+  const [collapsed, setCollapsed] = useState();
+  const [ActiveTab, setActiveTab] = useState(0);
   const toggleNavbar = () => setCollapsed(!collapsed);
 
-  // console.log(useLocation());
-  let loc = useLocation();
-
   useEffect(() => {
-    setActiveTab(getActiveTab(loc));
-  }, [loc]);
+    if (window !== undefined) {
+      setCollapsed(window.innerWidth < 600 ? true : false);
+      setActiveTab(getActiveTab(window.location));
+    }
+  }, []);
 
   useEffect(() => {}, [ActiveTab]);
 
   return (
     <>
       <Navbar
-        bg='light'
-        expand='lg'
+        bg="light"
+        expand="lg"
         expanded={!collapsed}
-        className='bottom-border-red'>
-        <Link to='/' style={{ textDecoration: "none" }}>
-          <Navbar.Brand className='navbar-brand parent-head'>
-            <img src={navLogo} className='navbar-logo' />
-            <p className='head-underline'>Mayank_MP5</p>
+        className="bottom-border-red"
+      >
+        <Link href="/" style={{ textDecoration: "none" }}>
+          <Navbar.Brand className="navbar-brand parent-head">
+            <img src={navLogo} className="navbar-logo" />
+            <p className="head-underline">Mayank_MP5</p>
           </Navbar.Brand>
         </Link>
         <Navbar.Toggle
-          aria-controls='basic-navbar-nav'
-          className='mx-3 options-toggle'>
+          aria-controls="basic-navbar-nav"
+          className="mx-3 options-toggle"
+        >
           <img
             src={collapsed ? Option : Close}
-            className='options-toggle'
+            className="options-toggle"
             onClick={toggleNavbar}
           />
         </Navbar.Toggle>
-        <Navbar.Collapse id='basic-navbar-nav' className='nav-list-container'>
-          <Nav className='ml-auto' onClick={() => toggleNavbar()}>
+        <Navbar.Collapse id="basic-navbar-nav" className="nav-list-container">
+          <Nav className="ml-auto" onClick={() => toggleNavbar()}>
             <Link
-              to='/home'
+              href="/home"
               className={"text-black nav-link "}
               style={ActiveTab === 0 ? underline : {}}
-              onClick={() => toggleNavbar()}>
+              onClick={() => toggleNavbar()}
+            >
               🏠Home
             </Link>
 
             <Link
-              to='/projects'
+              href="/projects"
               className={"text-black nav-link "}
               style={ActiveTab === 1 ? underline : {}}
-              onClick={() => toggleNavbar()}>
+              onClick={() => toggleNavbar()}
+            >
               👨‍🏫Projects
             </Link>
 
             <Link
-              to='/explore'
+              href="/explore"
               className={"text-black nav-link "}
               style={ActiveTab === 2 ? underline : {}}
-              onClick={() => toggleNavbar()}>
+              onClick={() => toggleNavbar()}
+            >
               🤩Explore
             </Link>
           </Nav>

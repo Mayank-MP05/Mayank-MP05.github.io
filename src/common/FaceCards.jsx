@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 function FaceCards({ data, redirectTo }) {
   const [Data, setData] = useState({ description: "" });
 
@@ -11,7 +11,7 @@ function FaceCards({ data, redirectTo }) {
     <>
       {Data ? (
         <Link
-          to={`/${redirectTo ? redirectTo : "explore"}/${Data.name}`}
+          href={`/${redirectTo ? redirectTo : "explore"}/${Data.name}`}
           className='card shadow-lg max-w-450 m-2'>
           <div className='pseudo-card'>
             <img

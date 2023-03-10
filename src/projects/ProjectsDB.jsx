@@ -13,7 +13,6 @@ import MDMarathiLetterConv from "./data/Marathi-letter-convnet.md";
 import MDCarQuality from "./data/car-quality.md";
 
 import LinksBtn from "../common/LinksBtn";
-import { Redirect } from "react-router-dom";
 
 export const LinksRenderer = (p_id) => {
   switch (p_id) {
@@ -87,7 +86,7 @@ export const LinksRenderer = (p_id) => {
         </>
       );
     default:
-      return <Redirect to='/projects' />;
+      return <></>;
   }
 };
 
