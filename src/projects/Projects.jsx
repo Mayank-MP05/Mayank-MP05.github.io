@@ -1,35 +1,35 @@
 import React, { useState, useEffect } from "react";
 
-import OnImgTitle from "../common/OnImgTitile";
-import FaceCards from "../common/FaceCards";
+import OnImgTitleHeader from "../common/on-img-title-header";
+import ProjectInfoCards from "../common/project-info-cards";
 
 import { ProjectsDB } from "./ProjectsDB";
 import { Helmet } from "react-helmet";
 
-const Projects = ( ) => {
+const Projects = () => {
   return (
     <>
       <Helmet>
         <title>Projects | Mayank_MP5</title>
         <meta
-          name='description'
-          content='SDE Portfolio Projects of Mayank Pachpande'
+          name="description"
+          content="SDE Portfolio Projects of Mayank Pachpande"
         />
         <meta
-          name='keywords'
-          content='SpaceX informer,Hulk-huffman compressor,Molequilizer,Marathi Letter Detection'
+          name="keywords"
+          content="SpaceX informer,Hulk-huffman compressor,Molequilizer,Marathi Letter Detection"
         />
       </Helmet>
-      <OnImgTitle title='Projects' />
+      <OnImgTitleHeader title="Projects" />
 
-      <div className='card-deckX'>
+      <div className="card-deckX">
         {ProjectsDB.map((el) => (
-          <FaceCards data={el} key={el.title} redirectTo='projects' />
+          <ProjectInfoCards data={el} key={el.title} redirectTo="projects" />
         ))}
       </div>
       <hr />
     </>
   );
-}
+};
 
 export default Projects;

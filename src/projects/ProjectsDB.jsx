@@ -12,7 +12,7 @@ import MDVasooliMoney from "./data/vasooli-money.md";
 import MDMarathiLetterConv from "./data/Marathi-letter-convnet.md";
 import MDCarQuality from "./data/car-quality.md";
 
-import LinksBtn from "../common/LinksBtn";
+import LinksBtn from "../common/links-btn";
 
 export const LinksRenderer = (p_id) => {
   switch (p_id) {

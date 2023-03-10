@@ -1,5 +1,5 @@
-import FooterX from "../src/common/Footer";
-import NavbarX from "../src/common/Navbar";
+import GenericFooter from "../src/common/generic-footer";
+import GenericNavbar from "../src/common/generic-navbar";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -13,11 +13,11 @@ import '../src/styles/projects.css'
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
-            <NavbarX />
+            <GenericNavbar />
             <div className='container m-auto p-3'>
                 <Component {...pageProps} />
             </div>
-            <FooterX />
+            <GenericFooter />
         </>
     )
 }

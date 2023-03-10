@@ -1,5 +1,5 @@
 import React from "react";
-import OnImgTitle from "./OnImgTitile";
+import OnImgTitleHeader from "../common/on-img-title-header";
 
 const YoutubeLinks = [
   `https://www.youtube.com/watch?v=8Bgg-krt2fQ`,
@@ -12,25 +12,26 @@ const YoutubeLinks = [
   `https://www.youtube.com/watch?v=pRsYuBeXOuc`,
 ];
 
-const Memes = ( ) => {
+const MemesPage = () => {
   return (
     <>
-      <OnImgTitle
-        title='Memes'
-        subtitle='Just for FUN😊, Nothing serious here🙏'
+      <OnImgTitleHeader
+        title="Memes"
+        subtitle="Just for FUN😊, Nothing serious here🙏"
       />
 
       {YoutubeLinks.map((lnk) => (
         <iframe
           src={lnk.replace("watch?v=", "embed/")}
-          className='meme-iframe'
+          className="meme-iframe"
           title="mayank_mp5's meme galary"
-          frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen></iframe>
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       ))}
     </>
   );
-}
+};
 
-export default Memes;
+export default MemesPage;

@@ -28,7 +28,7 @@ const getActiveTab = (obj) => {
       return 0;
   }
 };
-function NavbarX(props) {
+function GenericNavbar(props) {
   const [collapsed, setCollapsed] = useState();
   const [ActiveTab, setActiveTab] = useState(0);
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -106,4 +106,4 @@ function NavbarX(props) {
   );
 }
 
-export default NavbarX;
+export default GenericNavbar;

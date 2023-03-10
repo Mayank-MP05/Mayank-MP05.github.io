@@ -1,41 +1,40 @@
 import React, { useState, useEffect } from "react";
 
-import OnImgTitle from "../common/OnImgTitile";
+import OnImgTitleHeader from "../common/on-img-title-header";
 import { ExploreDB } from "./ExploreDB";
-import FaceCards from "../common/FaceCards";
+import ProjectInfoCards from "../common/project-info-cards";
 import { Helmet } from "react-helmet";
 
-const Explore = ( ) => {
+const Explore = () => {
   return (
     <>
       <Helmet>
         <title>Explore | Mayank_MP5</title>
         <meta
-          name='description'
-          content='SDE Portfolio Projects of Mayank Pachpande'
+          name="description"
+          content="SDE Portfolio Projects of Mayank Pachpande"
         />
         <meta
-          name='keywords'
-          content='Codersgram,Mayank memes,face recognition system'
+          name="keywords"
+          content="Codersgram,Mayank memes,face recognition system"
         />
       </Helmet>
-      <OnImgTitle
-        title='Explore'
+      <OnImgTitleHeader
+        title="Explore"
         subtitle={
           "These are the things I tried sometimes for learning sometimes for fun😁"
         }
       />
 
       <hr />
-      <div className='card-deckX'>
+      <div className="card-deckX">
         {ExploreDB.map((el) => (
-          <FaceCards data={el} key={el.title} />
+          <ProjectInfoCards data={el} key={el.title} />
         ))}
       </div>
       <hr />
     </>
   );
-}
-
+};
 
 export default Explore;

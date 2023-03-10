@@ -1,5 +1,6 @@
 // IMPORTS: Importing project logos here
-const FaceDetctionLogo = "/static/project-icons/face-detection-and-recognition.png";
+const FaceDetctionLogo =
+  "/static/project-icons/face-detection-and-recognition.png";
 const SpaceXLogo = "/static/project-icons/spaceX.png";
 const NemoFishyLogo = "/static/project-icons/Nemo.png";
 const ExamBeepLogo = "/static/project-icons/exam-beep.png";
@@ -18,7 +19,7 @@ import MDteamAuto from "./exploreData/MDteam-automatons.md";
 import MDHiTech from "./exploreData/MDHitech-controls.md";
 import MDUnicktoe from "./exploreData/MDUnicktoe.md";
 
-import LinksBtn from "../common/LinksBtn";
+import LinksBtn from "../common/links-btn";
 
 export const LinksRenderer = (p_id) => {
   switch (p_id) {
