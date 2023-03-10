@@ -20,6 +20,8 @@ function FaceCards({ data, redirectTo }) {
               className='card-img-top w-50 m-auto justify-content-around'
               src={Data.img}
               alt={Data.description}
+              width={200}
+              height={200}
             />
             <div className='card-body'>
               <h5 className='card-title underline-text font-weight-bold'>

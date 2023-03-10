@@ -50,7 +50,12 @@ function NavbarX(props) {
       >
         <Link href="/" style={{ textDecoration: "none" }}>
           <Navbar.Brand className="navbar-brand parent-head">
-            <Image src={NavbarLogoIcon} className="navbar-logo" />
+            <Image
+              src={NavbarLogoIcon}
+              className="navbar-logo"
+              width={50}
+              height={50}
+            />
             <p className="head-underline">Mayank_MP5</p>
           </Navbar.Brand>
         </Link>
@@ -59,6 +64,8 @@ function NavbarX(props) {
           className="mx-3 options-toggle"
         >
           <Image
+            width={50}
+            height={50}
             src={collapsed ? OptionsIcon : CloseBtnIcon}
             className="options-toggle"
             onClick={toggleNavbar}
