@@ -24,7 +24,7 @@ const Projects = ( ) => {
 
       <div className='card-deckX'>
         {ProjectsDB.map((el) => (
-          <FaceCards data={el} key={el.title} redirectTo='project' />
+          <FaceCards data={el} key={el.title} redirectTo='projects' />
         ))}
       </div>
       <hr />
