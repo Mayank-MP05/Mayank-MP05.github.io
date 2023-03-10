@@ -12,7 +12,8 @@ const YoutubeLinks = [
   `https://www.youtube.com/watch?v=pRsYuBeXOuc`,
 ];
 
-function Memes() {
+function 
+() {
   return (
     <>
       <OnImgTitle
