@@ -4,13 +4,13 @@ import Introcard from "./Introcard";
 import Achievements from "./Achievements";
 import Sociallinks from "./Sociallinks";
 
-const Home = ( ) => {
+const Home = () => {
   return (
     <>
       <Introcard />
       <Achievements />
     </>
   );
-}
+};
 
 export default Home;
