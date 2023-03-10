@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Link from 'next/link'
 import "jquery/dist/jquery";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
-import "./common.css";
 import navLogo from "./img/nav_logo.png";
 
 // Close and Option Buttons

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Link from 'next/link'
 
 import MayankImg from "./Mayank-Pachpande-bg-img-edited.jpg";
 import Sociallinks from "./Sociallinks";

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./projects.css";
 
 import OnImgTitle from "../common/OnImgTitile";
 import FaceCards from "../common/FaceCards";
