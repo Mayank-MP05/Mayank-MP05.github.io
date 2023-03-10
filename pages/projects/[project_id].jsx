@@ -1,7 +1,13 @@
 import React from "react";
+import ProjReadmeRender from "../../src/projects/ProjReadmeRender";
 
 const SingleProjectComponent = ({ project_id }) => {
-  return <div>project_id: {project_id}</div>;
+  return (
+    <>
+      <div>project_id: {project_id}</div>
+      <ProjReadmeRender p_id={project_id} />
+    </>
+  );
 };
 
 export async function getStaticPaths() {
