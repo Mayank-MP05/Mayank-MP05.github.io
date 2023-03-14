@@ -3,10 +3,16 @@ module.exports = {
         config.module.rules.push(
             {
                 test: /\.md$/,
-                use: 'raw-loader'
+                loader: 'emit-file-loader',
+                options: {
+                    name: 'dist/[path][name].[ext]',
+                },
+            },
+            {
+                test: /\.md$/,
+                use: 'raw-loader',
             }
         )
-
         return config
     },
 };

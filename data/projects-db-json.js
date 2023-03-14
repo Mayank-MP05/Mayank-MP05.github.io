@@ -3,7 +3,7 @@ export const ProjectsDB = [
     {
         route_slug: "hulk-huffman-compressor",
         project_tab: "PROJECTS",
-        title: "Hulk Compressor",
+        title: "Hulk Huffman Compressor",
         description:
             "Huffman Compression is commonly used for lossless data compression.In this project,Image and Text Data Compression and Encryption using Huffman technique of freq tree. ",
         static_logo_path: HulkHuffMan,
