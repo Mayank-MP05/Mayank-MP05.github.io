@@ -25,6 +25,7 @@
     "next-build": "next build",
     "next-start": "next start",
     "next-build-start": "next build && next start",
+    "next-export": "next export",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

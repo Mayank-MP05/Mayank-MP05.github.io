@@ -26,6 +26,7 @@ function ProjectInfoCards({ singleProjData, parentTab = "projects" }) {
             <div className="d-flex align-items-end">
               {singleProjData.links_to_show.map((singleLink) => (
                 <LinksBtn
+                  key={singleLink.link_url}
                   link={singleLink.link_url}
                   title={singleLink.text_to_show}
                 />

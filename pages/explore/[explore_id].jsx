@@ -1,13 +1,17 @@
+import path from "path";
 import React from "react";
 import ProjectsDB from "../../data/projects-db-json";
 import ProjectReadmeRenderer from "../../src/common/project-readme-renderer";
 import SeoInjectorScript from "../../src/seo-injector-script";
 
-const SingleExploreProject = ({ exploreId }) => {
+const SingleExploreProject = ({ exploreId, markdownContent }) => {
   return (
     <>
       <SeoInjectorScript />
-      <ProjectReadmeRenderer projectId={exploreId} />
+      <ProjectReadmeRenderer
+        projectId={exploreId}
+        markdownContent={markdownContent}
+      />
     </>
   );
 };
@@ -23,7 +27,7 @@ export async function getStaticPaths() {
     paths: [
       ...routesSlugs.map((exploreId) => ({
         params: {
-          exploreId: exploreId,
+          explore_id: exploreId,
         },
       })),
     ],
@@ -33,9 +37,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const singleProjectArr = ProjectsDB.filter(
+    (singleProj) => singleProj.route_slug === params.explore_id
+  );
+
+  const DOMAIN_NAME = "https://mayank5pande.com";
+  const readme_file_path = singleProjectArr[0].readme_file_path;
+
+  // DOCS: Fetch the markdown file content
+  const fetchPromise = await fetch(`${DOMAIN_NAME}${readme_file_path}`);
+  const textConvPromise = await fetchPromise.text();
+
   return {
     props: {
-      exploreId: params.exploreId,
+      exploreId: params.explore_id,
+      markdownContent: textConvPromise.toString(),
     },
   };
 }

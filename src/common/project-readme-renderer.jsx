@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import ProjectsDB from "../../data/projects-db-json";
 
-const ProjectReadmeRenderer = ({ projectId }) => {
+const ProjectReadmeRenderer = ({ projectId, markdownContent }) => {
   const [Mkdown, setMkdown] = useState("Loading...");
   const [redir, setredir] = useState(false);
   useEffect(() => {
@@ -28,7 +28,7 @@ const ProjectReadmeRenderer = ({ projectId }) => {
       {/* <div className="d-flex">{LinksRenderer(projectId)}</div> */}
       <hr className="my-1" />
       <div className="max-w-100">
-        <ReactMarkdown remarkPlugins={[gfm]} children={Mkdown} />
+        <ReactMarkdown remarkPlugins={[gfm]} children={markdownContent} />
       </div>
     </>
   );
