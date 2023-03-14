@@ -1,14 +1,27 @@
 import React from "react";
-import GenericProjectGallery from "../../src/projects/Projects";
+import ProjectsDB from "../../data/projects-db-json";
+import GenericProjectGallery from "../../src/common/project-gallery";
 import SeoInjectorScript from "../../src/seo-injector-script";
 
-const ExplorePage = () => {
+const ProjectsPage = ({ projectList, title }) => {
   return (
     <>
       <SeoInjectorScript />
-      <GenericProjectGallery />
+      <GenericProjectGallery title={title} projectList={projectList} />
     </>
   );
 };
 
-export default ExplorePage;
+export async function getStaticProps(context) {
+  const projectsFiltered = ProjectsDB.filter(
+    (project) => project.project_tab === "EXPLORE"
+  );
+  return {
+    props: {
+      projectList: projectsFiltered,
+      title: `Explore`,
+    },
+  };
+}
+
+export default ProjectsPage;

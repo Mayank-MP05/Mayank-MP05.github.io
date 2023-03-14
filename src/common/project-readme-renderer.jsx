@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import ProjectsDB from "../../data/projects-db-json";
 
-const ProjReadmeRender = ({ p_id }) => {
+const ProjectReadmeRenderer = ({ p_id }) => {
   const [Mkdown, setMkdown] = useState("Loading...");
   const [redir, setredir] = useState(false);
   useEffect(() => {
@@ -34,4 +34,4 @@ const ProjReadmeRender = ({ p_id }) => {
   );
 };
 
-export default ProjReadmeRender;
+export default ProjectReadmeRenderer;

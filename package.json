@@ -24,6 +24,7 @@
     "next-dev": "next dev -p 1234",
     "next-build": "next build",
     "next-start": "next start",
+    "next-build-start": "next build && next start",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
