@@ -31,7 +31,7 @@ const ProjectsDB = [
             "Project Built for all india SIH's Toycathon 2021 built in plain stack but feature rich around problem statement of balancing chemical reaction visually and later integrated periodic table",
         static_logo_path: '/static/project-icons/moliquilizer-logo.png',
         readme_file_path: `/static/markdown/molequilizer-hackathon-project.md`,
-        links: [{
+        links_to_show: [{
             text_to_show: "Live Demo",
             link_url: "https://team-molequilizer.web.app/"
         },
@@ -49,7 +49,7 @@ const ProjectsDB = [
             "This is full flesh money manager app.This app lets us track all your transactions and cash flows whether you spend it or lend it to someone or from someone",
         static_logo_path: `/static/project-icons/vasooli-money.png`,
         readme_file_path: `/static/markdown/vasooli-money-version-one.md`,
-        links: [{
+        links_to_show: [{
             text_to_show: "Live Demo",
             link_url: "https://vasoolimoney.web.app"
         },
@@ -68,9 +68,9 @@ const ProjectsDB = [
         title: "Marathi Recognition",
         description:
             "Project uses Deep Learning based character recognition. The flask web server is used to minimize complexities.The drawn character on the Canvas will be recognized",
-        static_logo_path: `/static/project-icons/Marathi-letter-convnet`,
+        static_logo_path: `/static/project-icons/Marathi-letter-convnet.png`,
         readme_file_path: `/static/markdown/marathi-letter-detection-convnet.md`,
-        links: [{
+        links_to_show: [{
             text_to_show: "Github",
             link_url: "https://github.com/Mayank-MP05/Marathi-Letter-Recognition-ConvNet"
         }],
@@ -83,7 +83,7 @@ const ProjectsDB = [
             "Using Decision Tree and SVM to really process the input attributes of the car sent over flask server and displaying the predicted output (Categorical Nature)",
         static_logo_path: `/static/project-icons/car-quality.png`,
         readme_file_path: `/static/markdown/car-quality-full-stack-ml-project.md`,
-        links: [{
+        links_to_show: [{
             text_to_show: "Live Demo",
             link_url: "https://car-quality-prediction.herokuapp.com/"
         },

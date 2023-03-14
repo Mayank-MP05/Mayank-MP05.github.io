@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import LinksBtn from "./links-btn";
 
 function ProjectInfoCards({ data, redirectTo }) {
   return (
     <>
-      {data && data.title ? (
+      {data && data.route_slug ? (
         <Link
-          href={`/${redirectTo ? redirectTo : "explore"}/${data.name}`}
+          href={`/projects/${data.route_slug}`}
           className="card shadow-lg max-w-450 m-2"
         >
           <div className="pseudo-card">
             <Image
               className="card-img-top w-50 m-auto justify-content-around"
-              src={data.img}
+              src={data.static_logo_path}
               alt={data.description}
               width={200}
               height={200}
@@ -23,7 +24,14 @@ function ProjectInfoCards({ data, redirectTo }) {
                 {data.title}
               </h5>
               <p className="card-text">{data.description}</p>
-              <div className="d-flex align-items-end">{data.links}</div>
+              <div className="d-flex align-items-end">
+                {data.links_to_show.map((singleLink) => (
+                  <LinksBtn
+                    link={singleLink.link_url}
+                    title={singleLink.text_to_show}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </Link>
