@@ -1,8 +1,8 @@
 import React from "react";
-import Explore from "../../src/explore/Explore";
+import Projects from "../../src/projects/Projects";
 
 const ExplorePage = () => {
-  return <Explore />;
+  return <Projects />;
 };
 
 export default ExplorePage;
