@@ -5,9 +5,15 @@ export const ExploreDB = [
     title: "Face Recognition System",
     description:
       "Huffman Compression is commonly used for lossless data compression.In this project,Image and Text Data Compression and Encryption using Huffman technique of freq tree. ",
-    static_logo_path: FaceDetctionLogo,
-    readme_file_path: MDFaceDetection,
-    links_to_show: [],
+    static_logo_path: `/static/project-icons/face-detection-and-recognition.png`,
+    readme_file_path: `/static/markdown/face-detection-and-recognition.md`,
+    links_to_show: [
+      {
+        text_to_show: "Github",
+        link_url:
+          "https://github.com/Mayank-MP05/Deep-Learning-Face-Recognition-ML-DL",
+      },
+    ],
   },
   {
     route_slug: "spacex-informer",
@@ -15,9 +21,18 @@ export const ExploreDB = [
     title: "SpaceX Informer App",
     description:
       "Project Built for all india SIH's Toycathon 2021 built in plain stack but feature rich around problem statement of balancing chemical reaction visually and later integrated periodic table",
-    static_logo_path: SpaceXLogo,
-    readme_file_path: MDSpaceX,
-    links_to_show: [],
+    static_logo_path: `/static/project-icons/spaceX.png`,
+    readme_file_path: `/static/markdown/space-x-api-project.md`,
+    links_to_show: [
+      {
+        text_to_show: "Live Demo",
+        link_url: "https://the-spacex-informer.netlify.app/",
+      },
+      {
+        text_to_show: "Github",
+        link_url: "https://github.com/Mayank-MP05/SpaceX-Info-React-Ionic-App",
+      },
+    ],
   },
   {
     route_slug: "nemo-goa-guide",
@@ -25,9 +40,14 @@ export const ExploreDB = [
     title: "Nemo-The Goa Guide",
     description:
       "Built using Plain Stack and Cordova Wrapper.This Android App lets you updated about the history origin location and picture of this famous tourist attractions",
-    static_logo_path: NemoFishyLogo,
-    readme_file_path: MDNemo,
-    links_to_show: [],
+    static_logo_path: `/static/project-icons/Nemo.png`,
+    readme_file_path: `/static/markdown/nemo-goa-guide.md`,
+    links_to_show: [
+      {
+        text_to_show: "Github",
+        link_url: "https://github.com/Mayank-MP05/SIH_Goa_Info_Web-Android_App",
+      },
+    ],
   },
   {
     route_slug: "exam-beep",
@@ -35,9 +55,19 @@ export const ExploreDB = [
     title: "Exam Beep Notifier",
     description:
       "Hackathon Project: Colleges just need to post the details in the CSV format and students will be notified.This help reduce overall chaos by acting as one-stop solution",
-    static_logo_path: ExamBeepLogo,
-    readme_file_path: MDExamBeep,
-    links_to_show: [],
+    static_logo_path: `/static/project-icons/exam-beep.png`,
+    readme_file_path: `/static/markdown/exam-beep-hackathon-project.md
+    `,
+    links_to_show: [
+      {
+        text_to_show: "Frontend",
+        link_url: "https://github.com/Mayank-MP05/Exam_Beep_Frontend",
+      },
+      {
+        text_to_show: "Backend",
+        link_url: "https://github.com/Mayank-MP05/Exam_Beep_Backend",
+      },
+    ],
   },
   {
     route_slug: "memes",
@@ -45,8 +75,8 @@ export const ExploreDB = [
     title: "Memes-Just for Fun",
     description:
       "Memes and Video Editing archives - JUST FOR FUN - NOT for serious peoples",
-    static_logo_path: MemesPageLogo,
-    readme_file_path: MDMemes,
+    static_logo_path: `/static/project-icons/memes.png`,
+    readme_file_path: `/static/markdown/memes-page.md`,
     links_to_show: [],
   },
   {
@@ -55,9 +85,18 @@ export const ExploreDB = [
     title: "Team Automatons Website",
     description:
       "PCCOE's Robotics Website designed for Sponsorships and marketing purposes include designing and SEO of the website",
-    static_logo_path: TeamAutomatonsLogo,
-    readme_file_path: MDteamAuto,
-    links_to_show: [],
+    static_logo_path: `/static/project-icons/team-automatons.png`,
+    readme_file_path: `/static/markdown/team-automatons-website.md`,
+    links_to_show: [
+      {
+        text_to_show: "Live Demo",
+        link_url: "https://mayank-mp05.github.io/Team_Automatons_website/",
+      },
+      {
+        text_to_show: "Github",
+        link_url: "https://github.com/Mayank-MP05/Team_Automatons_website",
+      },
+    ],
   },
   {
     route_slug: "hitech-controls",
@@ -65,9 +104,18 @@ export const ExploreDB = [
     title: "Hi-Tech Controls website",
     description:
       "They provides various products like Lift inverters, Stabilizers, Solar Rooftop System and other related products. Building their website and SEO for the website",
-    static_logo_path: HitechWebsiteLogo,
-    readme_file_path: MDHiTech,
-    links_to_show: [],
+    static_logo_path: `/static/project-icons/hitech-controls.png`,
+    readme_file_path: `/static/markdown/hi-tech-controls-website.md`,
+    links_to_show: [
+      {
+        text_to_show: "Live Demo",
+        link_url: "https://hitech-new.netlify.app/",
+      },
+      {
+        text_to_show: "Github",
+        link_url: "https://github.com/Mayank-MP05/HiTech-New",
+      },
+    ],
   },
   {
     route_slug: "unicktoe",
@@ -75,8 +123,18 @@ export const ExploreDB = [
     title: "U-Nick-Toe Game",
     description:
       "Two player tic-tac-toe game with the unique twist of having limited pawns so that you have to move the existing ones have 1300 downloads on playstore",
-    static_logo_path: UnicktoeLogo,
-    readme_file_path: MDUnicktoe,
-    links_to_show: [],
+    static_logo_path: `/static/project-icons/unicktoe.png`,
+    readme_file_path: `/static/markdown/unick-toe-game.md`,
+    links_to_show: [
+      {
+        text_to_show: "Live Demo",
+        link_url:
+          "https://play.google.com/store/apps/details?id=com.firstkit.unicktoe&hl=en_US&gl=US&pli=1",
+      },
+      {
+        text_to_show: "Github",
+        link_url: "https://github.com/Mayank-MP05/U-Nick-Toe",
+      },
+    ],
   },
 ];

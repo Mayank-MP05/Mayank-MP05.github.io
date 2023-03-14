@@ -1,0 +1,16 @@
+aimnet-logo.png
+car-quality.png
+draw-messenger.png
+exam-beep.png
+face-detection-and-recognition.png
+hitech-controls.png
+hulk-huffman-compression.png
+icons-list.txt
+Marathi-letter-convnet.png
+memes.png
+moliquilizer-logo.png
+Nemo.png
+spaceX.png
+team-automatons.png
+unicktoe.png
+vasooli-money.png
