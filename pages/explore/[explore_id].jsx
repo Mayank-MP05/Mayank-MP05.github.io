@@ -4,11 +4,16 @@ import ProjectsDB from "../../data/projects-db-json";
 import ProjectReadmeRenderer from "../../src/common/project-readme-renderer";
 import SeoInjectorScript from "../../src/seo-injector-script";
 
-const SingleExploreProject = ({ exploreId, markdownContent }) => {
+const SingleExploreProject = ({
+  exploreId,
+  markdownContent,
+  singleProjectDetails,
+}) => {
   return (
     <>
       <SeoInjectorScript />
       <ProjectReadmeRenderer
+        singleProjectDetails={singleProjectDetails}
         projectId={exploreId}
         markdownContent={markdownContent}
       />
@@ -45,12 +50,14 @@ export async function getStaticProps({ params }) {
   const readme_file_path = singleProjectArr[0].readme_file_path;
 
   // DOCS: Fetch the markdown file content
+  console.log(`\n[INFO] GET ${DOMAIN_NAME}${readme_file_path}`);
   const fetchPromise = await fetch(`${DOMAIN_NAME}${readme_file_path}`);
   const textConvPromise = await fetchPromise.text();
 
   return {
     props: {
       exploreId: params.explore_id,
+      singleProjectDetails: singleProjectArr[0],
       markdownContent: textConvPromise.toString(),
     },
   };

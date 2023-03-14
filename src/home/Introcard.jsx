@@ -5,12 +5,17 @@ import Link from "next/link";
 const MayankBgEditedIcon = "/static/common/mayank-pachpande-bg-img-edited.jpg";
 import Sociallinks from "./Sociallinks";
 import Image from "next/image";
-const Introcard = () => {
+const IntroCard = () => {
   return (
     <div className="w-100 d-flex shadow-lg p-3 mb-5 bg-white roundedX row m-auto">
       <Card className="left-card no-border m-auto col-md-4 col-sm-12">
         <Card.Body>
-          <Image src={MayankBgEditedIcon} width={150} height={150}  />
+          <Image
+            src={MayankBgEditedIcon}
+            width={150}
+            height={150}
+            alt="Mayank Pachpande Profile"
+          />
           <Card.Title>Mayank Pachpande</Card.Title>
           <Card.Text>Software Development Engineer</Card.Text>
           <Link href="/projects" className="font-weight-bold">
@@ -42,4 +47,4 @@ const Introcard = () => {
   );
 };
 
-export default Introcard;
+export default IntroCard;

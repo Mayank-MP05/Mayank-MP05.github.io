@@ -48,17 +48,16 @@ function GenericNavbar(props) {
         expanded={!collapsed}
         className="bottom-border-red"
       >
-        <Link href="/" style={{ textDecoration: "none" }}>
-          <Navbar.Brand className="navbar-brand parent-head">
-            <Image
-              src={NavbarLogoIcon}
-              className="navbar-logo"
-              width={50}
-              height={50}
-            />
-            <p className="head-underline">Mayank_MP5</p>
-          </Navbar.Brand>
-        </Link>
+        <Navbar.Brand href="/" className="navbar-brand parent-head">
+          <Image
+            src={NavbarLogoIcon}
+            className="navbar-logo"
+            width={50}
+            height={50}
+            alt="navbar"
+          />
+          <p className="head-underline">Mayank_MP5</p>
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className="mx-3 options-toggle"
@@ -69,6 +68,7 @@ function GenericNavbar(props) {
             src={collapsed ? OptionsIcon : CloseBtnIcon}
             className="options-toggle"
             onClick={toggleNavbar}
+            alt="options-toggle"
           />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="nav-list-container">

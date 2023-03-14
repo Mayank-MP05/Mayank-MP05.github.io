@@ -29,7 +29,13 @@ function LinksBtn({ link, title }) {
 
   return (
     <a href={link} target="_blank" className="btn btn-outline-brown m-1">
-      <Image src={Img} className="on-btn-img" width={500} height={100} />
+      <Image
+        src={Img}
+        className="on-btn-img"
+        width={500}
+        height={100}
+        alt="on img toggler"
+      />
       {title}
     </a>
   );

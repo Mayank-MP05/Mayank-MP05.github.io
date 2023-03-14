@@ -11,7 +11,7 @@ const Singlelink = ({ name, link, img }) => {
     <div>
       <OverlayTrigger placement="top" overlay={renderTooltip(name)}>
         <a href={link} target="_blank">
-          <Image src={img} width={80} height={30} />
+          <Image src={img} width={80} height={30} alt="Github Icon" />
         </a>
       </OverlayTrigger>
     </div>

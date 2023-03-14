@@ -1,13 +1,13 @@
 import React from "react";
 
-import Introcard from "./Introcard";
+import IntroCard from "./IntroCard";
 import Achievements from "./Achievements";
 import Sociallinks from "./Sociallinks";
 
 const Home = () => {
   return (
     <>
-      <Introcard />
+      <IntroCard />
       <Achievements />
     </>
   );
