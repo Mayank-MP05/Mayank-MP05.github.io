@@ -5,14 +5,18 @@ import ProjectInfoCards from "../common/project-info-cards";
 
 import ProjectsDB from "../../data/projects-db-json";
 
-const Projects = () => {
+const GenericProjectGallery = ({ tabId = "PROJECTS" }) => {
   return (
     <>
       <OnImgTitleHeader title="Projects" />
 
       <div className="card-deckX">
         {ProjectsDB.map((el) => (
-          <ProjectInfoCards data={el} key={el.route_slug} redirectTo="projects" />
+          <ProjectInfoCards
+            data={el}
+            key={el.route_slug}
+            redirectTo="projects"
+          />
         ))}
       </div>
       <hr />
@@ -20,4 +24,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default GenericProjectGallery;

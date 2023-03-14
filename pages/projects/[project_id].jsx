@@ -21,7 +21,7 @@ export async function getStaticPaths() {
     paths: [
       {
         params: routesSlugs.map((project_id) => ({
-          project_id: `/projects/${project_id}`,
+          project_id: `${project_id}`,
         })),
       },
     ],
@@ -33,7 +33,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   return {
     props: {
-      project_id: params.project_id,
+      project_id: params.project_id.toString(),
     },
   };
 }
