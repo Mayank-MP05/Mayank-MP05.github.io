@@ -1,0 +1,13 @@
+/static/markdown/car-quality-full-stack-ml-project.md
+/static/markdown/exam-beep-hackathon-project.md
+/static/markdown/face-detection-and-recognition.md
+/static/markdown/hi-tech-controls-website.md
+/static/markdown/hulk-huffman-compression.md
+/static/markdown/marathi-letter-detection-convnet.md
+/static/markdown/memes-page.md
+/static/markdown/molequilizer-hackathon-project.md
+/static/markdown/nemo-goa-guide.md
+/static/markdown/space-x-api-project.md
+/static/markdown/team-automatons-website.md
+/static/markdown/unick-toe-game.md
+/static/markdown/vasooli-money-version-one.md
