@@ -13,9 +13,12 @@ const SingleExploreProject = ({ explore_id }) => {
 };
 
 export async function getStaticPaths() {
+  console.log("\n[INFO] Started building explore pages ...");
   const routesSlugs = ProjectsDB.filter(
     (project) => project.project_tab === "EXPLORE"
   ).map((singleProject) => singleProject.route_slug);
+
+  console.log("[INFO] Explore Pages Data: ", routesSlugs);
   return {
     paths: [
       ...routesSlugs.map((explore_id) => ({

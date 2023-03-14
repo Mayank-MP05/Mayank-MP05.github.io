@@ -13,10 +13,14 @@ const SingleProjectComponent = ({ project_id }) => {
 };
 
 export async function getStaticPaths() {
+  console.log("\n[INFO] Started building project pages ...");
+
   const routesSlugs = ProjectsDB.filter(
     (project) => project.project_tab === "PROJECTS"
   ).map((singleProject) => singleProject.route_slug);
-  console.log({ routesSlugs });
+
+  console.log("[INFO] Projects Pages Data: ", routesSlugs);
+
   return {
     paths: [
       ...routesSlugs.map((project_id) => ({

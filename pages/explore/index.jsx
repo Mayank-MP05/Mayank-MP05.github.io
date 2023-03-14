@@ -3,11 +3,11 @@ import ProjectsDB from "../../data/projects-db-json";
 import GenericProjectGallery from "../../src/common/project-gallery";
 import SeoInjectorScript from "../../src/seo-injector-script";
 
-const ProjectsPage = ({ projectList, title }) => {
+const ProjectsPage = ({ projectsList, title }) => {
   return (
     <>
       <SeoInjectorScript />
-      <GenericProjectGallery title={title} projectList={projectList} />
+      <GenericProjectGallery title={title} projectsList={projectsList} />
     </>
   );
 };
@@ -18,7 +18,7 @@ export async function getStaticProps(context) {
   );
   return {
     props: {
-      projectList: projectsFiltered,
+      projectsList: projectsFiltered,
       title: `Explore`,
     },
   };
