@@ -10,8 +10,6 @@ const GenericProjectGallery = ({
   projectsList = [],
   tabId = "PROJECTS",
 }) => {
-  console.log(projectsList);
-
   return (
     <>
       <OnImgTitleHeader title={title} />
