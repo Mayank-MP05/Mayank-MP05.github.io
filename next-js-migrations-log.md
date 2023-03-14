@@ -25,3 +25,5 @@ ReactGA.pageview(window.location.pathname + window.location.search);
     ],
 },
 ```
+
+- Generating the data of **5 Projects** and **8 Explore projects**

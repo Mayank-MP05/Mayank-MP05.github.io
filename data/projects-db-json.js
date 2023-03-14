@@ -6,12 +6,20 @@ export const ProjectsDB = [
         title: "Hulk Huffman Compressor",
         description:
             "Huffman Compression is commonly used for lossless data compression.In this project,Image and Text Data Compression and Encryption using Huffman technique of freq tree. ",
-        static_logo_path: HulkHuffMan,
-        readme_file_path: MDHulkHuffMan,
+        static_logo_path: `/static/project-icons/hulk-huffman-compression.png`,
+        readme_file_path: `/static/markdown/hulk-huffman-compression.md`,
         links_to_show: [
             {
-                text_to_show: "Github",
-                link_url: ""
+                text_to_show: "Live Demo",
+                link_url: "https://hulk-huffman-compressor.netlify.app/"
+            },
+            {
+                text_to_show: "Frontend",
+                link_url: "https://github.com/Mayank-MP05/Hulk-Compressor-Frontend"
+            },
+            {
+                text_to_show: "Backend",
+                link_url: "https://github.com/Mayank-MP05/Hulk-Huffman-Backend"
             }
         ],
     },
@@ -20,7 +28,7 @@ export const ProjectsDB = [
         title: "Team Molequilzer",
         description:
             "Project Built for all india SIH's Toycathon 2021 built in plain stack but feature rich around problem statement of balancing chemical reaction visually and later integrated periodic table",
-        static_logo_path: Molequilizer,
+        static_logo_path: '/static/project-icons/moliquilizer-logo.png',
         readme_file_path: MDMolequilizer,
         links: LinksRenderer("molequilizer"),
     },
