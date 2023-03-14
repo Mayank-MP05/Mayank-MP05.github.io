@@ -3,11 +3,11 @@ import ProjectsDB from "../../data/projects-db-json";
 import ProjectReadmeRenderer from "../../src/common/project-readme-renderer";
 import SeoInjectorScript from "../../src/seo-injector-script";
 
-const SingleExploreProject = ({ explore_id }) => {
+const SingleExploreProject = ({ exploreId }) => {
   return (
     <>
       <SeoInjectorScript />
-      <ProjectReadmeRenderer p_id={explore_id} />
+      <ProjectReadmeRenderer projectId={exploreId} />
     </>
   );
 };
@@ -21,9 +21,9 @@ export async function getStaticPaths() {
   console.log("[INFO] Explore Pages Data: ", routesSlugs);
   return {
     paths: [
-      ...routesSlugs.map((explore_id) => ({
+      ...routesSlugs.map((exploreId) => ({
         params: {
-          explore_id: explore_id,
+          exploreId: exploreId,
         },
       })),
     ],
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   return {
     props: {
-      explore_id: params.explore_id,
+      exploreId: params.exploreId,
     },
   };
 }

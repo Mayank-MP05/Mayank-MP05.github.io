@@ -3,11 +3,11 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import ProjectsDB from "../../data/projects-db-json";
 
-const ProjectReadmeRenderer = ({ p_id }) => {
+const ProjectReadmeRenderer = ({ projectId }) => {
   const [Mkdown, setMkdown] = useState("Loading...");
   const [redir, setredir] = useState(false);
   useEffect(() => {
-    let arr = ProjectsDB.filter((el) => el.route_slug === p_id);
+    let arr = ProjectsDB.filter((el) => el.route_slug === projectId);
     // setMkdown(arr[0].readme);
     if (arr.length === 1) {
       // Fetch the Readme
@@ -25,7 +25,7 @@ const ProjectReadmeRenderer = ({ p_id }) => {
 
   return (
     <>
-      {/* <div className="d-flex">{LinksRenderer(p_id)}</div> */}
+      {/* <div className="d-flex">{LinksRenderer(projectId)}</div> */}
       <hr className="my-1" />
       <div className="max-w-100">
         <ReactMarkdown remarkPlugins={[gfm]} children={Mkdown} />

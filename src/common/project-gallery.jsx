@@ -19,7 +19,7 @@ const GenericProjectGallery = ({
           <ProjectInfoCards
             singleProjData={singleProjectData}
             key={singleProjectData.route_slug}
-            redirectTo="projects"
+            redirectTo={`${title.toLowerCase()}`}
           />
         ))}
       </div>

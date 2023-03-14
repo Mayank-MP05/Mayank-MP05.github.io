@@ -7,7 +7,7 @@ const SingleProjectComponent = ({ project_id }) => {
   return (
     <>
       <SeoInjectorScript />
-      <ProjectReadmeRenderer p_id={project_id} />
+      <ProjectReadmeRenderer projectId={project_id} />
     </>
   );
 };
