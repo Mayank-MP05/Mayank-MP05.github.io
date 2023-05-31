@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "react-bootstrap";
 
 const GenericFooter = () => {
@@ -9,7 +10,15 @@ const GenericFooter = () => {
     >
       <div className="container">
         {" "}
-        <p className="text-black ">Made with Next JS 13</p>
+        <span className="text-black ">
+          Made with{" "}
+          <Image
+            src="/static/common/next-js-13-logo.png"
+            width={90}
+            height={38}
+            alt="next js 13 logo"
+          />
+        </span>
         <br />
         <p className="text-black">
           Contact :{" • "}
