@@ -10,7 +10,6 @@ const SingleProjectComponent = ({
 }) => {
   return (
     <>
-      <SeoInjectorScript />
       <ProjectReadmeRenderer
         projectId={project_id}
         singleProjectDetails={singleProjectDetails}

@@ -6,7 +6,6 @@ import SeoInjectorScript from "../../src/seo-injector-script";
 const ProjectsPage = ({ projectsList, title }) => {
   return (
     <>
-      <SeoInjectorScript />
       <GenericProjectGallery title={title} projectsList={projectsList} />
     </>
   );

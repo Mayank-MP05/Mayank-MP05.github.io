@@ -44,6 +44,12 @@ Development Portfolio"
                 <link rel="apple-touch-icon" href="https://mayank-mp05.github.io/favicon.ico" />
 
                 <link rel="canonical" href="https://mayank5pande.com" />
+                <meta
+                    name="keywords"
+                    content="Mayank_MP5,Mayank_MP05,MP5,Mayank,Mayank Pachpande,Pachpande,mayank5pande,CSE portfolio,SDE,SDE Portfolio,Pune SDE Portfolio,Mayank Pachpande Portfolio,Mayank Pachpande Projects,Mayank,Pachpande,PCCOE,Pune"
+                />
+                <meta name="author" content="Mayank Pachpande" />
+
                 <title>
                     Mayank Pachpande || Full Stack Developer - Enthusiast - Programmer || Software
                     Development Portfolio

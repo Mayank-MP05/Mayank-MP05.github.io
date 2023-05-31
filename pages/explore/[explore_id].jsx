@@ -11,7 +11,6 @@ const SingleExploreProject = ({
 }) => {
   return (
     <>
-      <SeoInjectorScript />
       <ProjectReadmeRenderer
         singleProjectDetails={singleProjectDetails}
         projectId={exploreId}
