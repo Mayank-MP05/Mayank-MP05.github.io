@@ -1,4 +1,7 @@
-https://pagespeed.web.dev/analysis/https-mayank5pande-com/3gr815182z?form_factor=desktop
+https://pagespeed.web.dev/analysis/https-mayank-mp05-github-io/swe1ou8yzc?form_factor=mobile
+
+https://pagespeed.web.dev/analysis/https-mayank5pande-com/gns0xl4deh?form_factor=mobile
+
 
 https://gtmetrix.com/reports/mayank5pande.com/kPjLjEuF/
 
