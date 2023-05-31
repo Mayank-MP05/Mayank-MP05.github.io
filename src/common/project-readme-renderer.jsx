@@ -11,7 +11,7 @@ const ProjectReadmeRenderer = ({
   return (
     <>
       <div className="d-flex">
-        {singleProjectDetails.links_to_show.map((singleLink) => (
+        {singleProjectDetails?.links_to_show.map((singleLink) => (
           <LinksBtn
             key={singleLink.link_url}
             link={singleLink.link_url}
