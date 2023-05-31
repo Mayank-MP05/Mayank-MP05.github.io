@@ -48,13 +48,6 @@
   border-radius: 10px;
 }
 
-.options-toggle {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: none;
-}
-
 .bold-text {
   font-weight: bold;
 }
@@ -170,6 +163,10 @@
     margin: auto;
     height: 550px;
   }
+
+  .options-toggle {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -191,6 +188,15 @@
     margin: auto;
     height: 280px;
   }
+  .vertical-stopper {
+    display: none;
+  }
+  .options-toggle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+  }
 }
 
 .project-title {
@@ -198,17 +204,44 @@
   font-weight: bold;
 }
 
-/* .container {
-  background-image: url("/static/common/dotted-background-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-} */
-
 .flex {
   display: flex;
 }
 
 .flex-row {
   flex-direction: row;
+}
+
+.border-0 {
+  border: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.red-blink-me {
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* CSS to prevent outline on click state */
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+button:focus:not(:focus-visible) {
+  outline: none;
 }

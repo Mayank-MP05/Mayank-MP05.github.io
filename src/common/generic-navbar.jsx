@@ -24,14 +24,21 @@ const getActiveTab = (obj) => {
       return 1;
     case "/explore":
       return 2;
+    case "/performance":
+      return 3;
     default:
       return 0;
   }
 };
+
 function GenericNavbar(props) {
   const [collapsed, setCollapsed] = useState(true);
   const [ActiveTab, setActiveTab] = useState(0);
   const toggleNavbar = () => setCollapsed(!collapsed);
+
+  const openApiVersionURL = () => {
+    window.open("https://api-version.mayank5pande.com/", "_self");
+  };
 
   useEffect(() => {
     if (window !== undefined) {
@@ -58,21 +65,42 @@ function GenericNavbar(props) {
           />
           <p className="head-underline">{` Mayank_MP5`}</p>
         </Navbar.Brand>
-        <Navbar.Toggle
+        <button
           aria-controls="basic-navbar-nav"
           className="mx-3 options-toggle"
+          onClick={toggleNavbar}
         >
           <Image
             width={50}
             height={50}
             src={collapsed ? OptionsIcon : CloseBtnIcon}
             className="options-toggle"
-            onClick={toggleNavbar}
             alt="options-toggle"
           />
-        </Navbar.Toggle>
+          {/* X */}
+        </button>
         <Navbar.Collapse id="basic-navbar-nav" className="nav-list-container">
           <Nav className="ml-auto" onClick={() => toggleNavbar()}>
+            <Link
+              href="/performance"
+              className={"text-black nav-link "}
+              style={ActiveTab === 3 ? underline : {}}
+              onClick={() => toggleNavbar()}
+            >
+              📈Performance{` `}
+              <span className="red-blink-me">new</span>
+            </Link>
+            <button
+              className={
+                "text-black nav-link border-0 bg-transparent text-left"
+              }
+              style={ActiveTab === 4 ? underline : {}}
+              onClick={() => openApiVersionURL()}
+            >
+              ⛏API{` `}
+              <span className="red-blink-me">new</span>
+            </button>
+            <div className="m-auto vertical-stopper">»</div>
             <Link
               href="/home"
               className={"text-black nav-link "}
