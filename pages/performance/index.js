@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import OnImgTitleHeader from '../../src/common/on-img-title-header'
 
 const PerformancePage = () => {
@@ -8,10 +8,10 @@ const PerformancePage = () => {
     useEffect(() => {
         if (typeof window != undefined) {
             const width = window.innerWidth
-            if(width < 600){
+            if (width < 600) {
                 setWindowWidth(width)
                 setImageHeight(0.4 * width)
-            }else{
+            } else {
                 setWindowWidth(0.8 * width)
                 setImageHeight(0.4 * width)
             }
@@ -21,6 +21,9 @@ const PerformancePage = () => {
     return (
         <div>
             <OnImgTitleHeader title={`Core Web Vitals`} />
+            <Image src="/static/performance-metrics/react-to-next-js.svg" width={windowWidth} height={imageHeight} />
+
+            <hr />
 
             <a href='https://pagespeed.web.dev/analysis/https-mayank-mp05-github-io/swe1ou8yzc?form_factor=mobile' target='_blank'>
                 <p className="project-title">OLD React Website - PageSpeed</p>
