@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 // IMPORTS: Module wise CSS imports
 import '../src/styles/common.css'
+import '../src/styles/globals.css'
 import '../src/styles/explore.css'
 import '../src/styles/home.css'
 import '../src/styles/projects.css'
