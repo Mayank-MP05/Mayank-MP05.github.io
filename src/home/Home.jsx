@@ -2,7 +2,7 @@ import React from "react";
 
 import IntroCard from "./IntroCard";
 import Achievements from "./Achievements";
-import Sociallinks from "./Sociallinks";
+import SocialLinks from "./Sociallinks";
 
 const Home = () => {
   return (

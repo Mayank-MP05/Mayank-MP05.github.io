@@ -6,16 +6,16 @@ const renderTooltip = (content) => (
   <Tooltip id="button-tooltip">{content}</Tooltip>
 );
 
-const Singlelink = ({ name, link, img }) => {
+const SingleLink = ({ name, link, img }) => {
   return (
     <div>
       <OverlayTrigger placement="top" overlay={renderTooltip(name)}>
         <a href={link} target="_blank">
-          <Image src={img} width={80} height={30} alt="Github Icon" />
+          <Image src={img} width={80} height={30} alt={name} />
         </a>
       </OverlayTrigger>
     </div>
   );
 };
 
-export default Singlelink;
+export default SingleLink;

@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 import Link from "next/link";
 
 const MayankBgEditedIcon = "/static/common/mayank-pachpande-bg-img-edited.jpg";
-import Sociallinks from "./Sociallinks";
+import SocialLinks from "./Sociallinks";
 import Image from "next/image";
 const IntroCard = () => {
   return (
@@ -41,7 +41,7 @@ const IntroCard = () => {
           <span className="bold-text">Machine Learning Projects</span>
         </p>
         <p>&rArr; Hobbies - Coding, Video Editing, Memes</p>
-        <Sociallinks />
+        <SocialLinks />
       </Card>
     </div>
   );

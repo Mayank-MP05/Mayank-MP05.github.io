@@ -2,18 +2,19 @@ import React from "react";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 
 import LinksDB from "./LinksDB";
-import Singlelink from "./Singlelink";
+import SingleLink from "./Singlelink";
 
-const Sociallinks = ( ) => {
+const SocialLinks = () => {
   return (
     <div
-      className='shadow-sm p-3 bg-white rounded social-links m-auto'
-      style={{ marginBottom: "10px" }}>
+      className="shadow-sm p-3 bg-white rounded social-links m-auto"
+      style={{ marginBottom: "10px" }}
+    >
       {LinksDB.map((el) => (
-        <Singlelink key={el.name} {...el} />
+        <SingleLink key={el.name} {...el} />
       ))}
     </div>
   );
-}
+};
 
-export default Sociallinks;
+export default SocialLinks;
