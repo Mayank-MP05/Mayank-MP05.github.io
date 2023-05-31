@@ -29,13 +29,13 @@ const getActiveTab = (obj) => {
   }
 };
 function GenericNavbar(props) {
-  const [collapsed, setCollapsed] = useState();
+  const [collapsed, setCollapsed] = useState(true);
   const [ActiveTab, setActiveTab] = useState(0);
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   useEffect(() => {
     if (window !== undefined) {
-      setCollapsed(window.innerWidth < 600 ? true : false);
+      // setCollapsed(window.innerWidth < 600 ? true : false);
       setActiveTab(getActiveTab(window.location));
     }
   }, []);

@@ -19,9 +19,9 @@ function ProjectInfoCards({ singleProjData, parentTab = "projects" }) {
             height={200}
           />
           <div className="card-body">
-            <h5 className="card-title underline-text font-weight-bold">
+            <p className="project-title card-title underline-text font-weight-bold">
               {singleProjData.title}
-            </h5>
+            </p>
             <p className="card-text">{singleProjData.description}</p>
           </div>
         </Link>

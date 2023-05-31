@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-const GithubIcon = "/static/common/github.png";
-const FrontendIcon = "/static/common/front-end.png";
-const BackEndIcon = "/static/common/back-end.png";
-const LiveDemoIcon = "/static/common/live-demo.png";
+const GithubIcon = "/static/common/github-compressed.png";
+const FrontendIcon = "/static/common/front-end-compressed.png";
+const BackEndIcon = "/static/common/back-end-compressed.png";
+const LiveDemoIcon = "/static/common/live-demo-compressed.png";
 
 function LinksBtn({ link, title }) {
   const [Img, setImg] = useState(GithubIcon);
