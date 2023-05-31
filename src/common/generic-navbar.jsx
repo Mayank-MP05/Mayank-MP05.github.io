@@ -56,7 +56,7 @@ function GenericNavbar(props) {
             height={50}
             alt="navbar"
           />
-          <p className="head-underline">{` `}Mayank_MP5</p>
+          <p className="head-underline">{` Mayank_MP5`}</p>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

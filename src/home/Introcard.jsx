@@ -31,7 +31,8 @@ const IntroCard = () => {
       <Card className="m-auto no-border d-flex justify-content-center  col-md-8 col-sm-12">
         <h4>About Me </h4>
         <p>
-          &rArr; Loves <span className="bold-text">JavaScript❤️</span>
+          &rArr; Experienced <span className="bold-text">Javascript❤️</span> SDE
+          Developer, With experience of working in a FinTech startup
         </p>
         <p>
           &rArr; Interested in{" "}
