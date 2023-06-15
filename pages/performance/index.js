@@ -25,22 +25,22 @@ const PerformancePage = () => {
 
             <hr />
 
-            <a href='https://pagespeed.web.dev/analysis/https-mayank-mp05-github-io/swe1ou8yzc?form_factor=mobile' target='_blank'>
+            <a className="project-title-link" href='https://pagespeed.web.dev/analysis/https-mayank-mp05-github-io/swe1ou8yzc?form_factor=mobile' target='_blank'>
                 <p className="project-title">OLD React Website - PageSpeed</p>
                 <Image src="/static/performance-metrics/page-speed-insights-old.png" width={windowWidth} height={imageHeight} />
             </a>
 
-            <a href='https://pagespeed.web.dev/analysis/https-mayank5pande-com/gns0xl4deh?form_factor=mobile' target='_blank'>
+            <a  className="project-title-link" href='https://pagespeed.web.dev/analysis/https-mayank5pande-com/gns0xl4deh?form_factor=mobile' target='_blank'>
                 <p className="project-title">NEW Next JS Website - PageSpeed</p>
                 <Image src="/static/performance-metrics/page-speed-insights-new.png" width={windowWidth} height={imageHeight} />
             </a>
 
-            <a href='https://gtmetrix.com/reports/mayank5pande.com/kPjLjEuF/' target='_blank'>
+            <a className="project-title-link" href='https://gtmetrix.com/reports/mayank5pande.com/kPjLjEuF/' target='_blank'>
                 <p className="project-title">GTMetrix</p>
                 <Image src="/static/performance-metrics/gtmetrics-insights.png" width={windowWidth} height={imageHeight} />
             </a>
 
-            <a href='https://www.webpagetest.org/result/230531_AiDcXF_6J8/' target='_blank'>
+            <a  className="project-title-link" href='https://www.webpagetest.org/result/230531_AiDcXF_6J8/' target='_blank'>
                 <p className="project-title">WebpageTest</p>
                 <Image src="/static/performance-metrics/webpagetest-insights.png" width={windowWidth} height={imageHeight} />
             </a>

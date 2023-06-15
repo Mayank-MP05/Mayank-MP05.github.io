@@ -15,7 +15,7 @@ const ResumeIcon = "/static/social-icons/resume.png";
 const LinksDB = [
   {
     name: "Resume",
-    link: "https://drive.google.com/file/d/1o4fcfhSdADrUXuGFrd313IxEnMh62NHk/view?usp=sharing",
+    link: "https://drive.google.com/drive/folders/1auC70rGIj5GXUvxJmCDl8_6NskvOeJlK?usp=drive_link",
     img: ResumeIcon,
   },
 
